@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   if (ref.getAuth()) window.location.href = "logout.html";
 
+
   document.getElementById("login").addEventListener("click", function() {
     let email = document.getElementById("email").value;
     let pw = document.getElementById("pw").value;
@@ -17,6 +18,8 @@ $(document).ready(function() {
       } else {
         console.log("Authenticated successfully with payload:", authData);
         console.log(ref.getAuth());
+        var port = chrome.extension.connect({name: "Sample Communication"});
+        port.postMessage(authData.uid);
         window.location.href = "logout.html";
       }
     });
