@@ -40,11 +40,13 @@ function switchTab() {
     }
   });
 }
-console.log("TEST");
-switchTab();
+
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log(request);  
-  sendResponse("HELLO");
+  console.log("Received message!");
+
+
+  sendResponse("received the message!");
+  return true;
 });
 	
