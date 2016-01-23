@@ -11,6 +11,7 @@
 
 #import "ViewController.h"
 #import <HoundSDK/HoundSDK.h>
+#import <Firebase/Firebase.h>
 
 #define VOICE_SEARCH_END_POINT       @"https://api.houndify.com/v1/audio"
 

@@ -19,7 +19,6 @@
 		4BD0AC8B1C53818600D61125 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC811C53818600D61125 /* Info.plist */; };
 		4BD0AC8C1C53818600D61125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC821C53818600D61125 /* main.m */; };
 		4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC841C53818600D61125 /* NavigationController.m */; };
-		4BD0AC8E1C53818600D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC861C53818600D61125 /* ViewController.m */; };
 		4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */; };
 		4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC911C5381C400D61125 /* AudioToolbox.framework */; };
 		4BD0AC941C5381CA00D61125 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC931C5381CA00D61125 /* Accelerate.framework */; };
@@ -29,6 +28,8 @@
 		4BD0AC9E1C53821800D61125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC9D1C53821800D61125 /* Foundation.framework */; };
 		4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA01C53825700D61125 /* LaunchScreen.xib */; };
 		4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA21C53826A00D61125 /* Main.storyboard */; };
+		4BD0ACA61C5390B300D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC861C53818600D61125 /* ViewController.m */; };
+		F690A71E12751F3BEFE985FD /* libPods-Remote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
 		4BD0AC2A1C53448C00D61125 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD0AC431C53448C00D61125 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD0AC471C53448C00D61125 /* RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTests.m; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		4BD0AC9D1C53821800D61125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BD0ACA01C53825700D61125 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BD0ACA21C53826A00D61125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */,
 				4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */,
 				4BD0AC6A1C53453C00D61125 /* libHoundSDK.a in Frameworks */,
+				F690A71E12751F3BEFE985FD /* libPods-Remote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +127,8 @@
 				4BD0AC2B1C53448C00D61125 /* Products */,
 				4BD0AC461C53448C00D61125 /* RemoteTests */,
 				4BD0AC511C53448C00D61125 /* RemoteUITests */,
+				B66DBB0D43700DBE00108AC4 /* Pods */,
+				9DA58C25EE75B01AA686AA20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +229,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9DA58C25EE75B01AA686AA20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66DBB0D43700DBE00108AC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */,
+				1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD0AC571C53448C00D61125 /* Build configuration list for PBXNativeTarget "Remote" */;
 			buildPhases = (
+				B49272C6A16ED8AAF7EC0F24 /* Check Pods Manifest.lock */,
 				4BD0AC261C53448C00D61125 /* Sources */,
 				4BD0AC271C53448C00D61125 /* Frameworks */,
 				4BD0AC281C53448C00D61125 /* Resources */,
+				E5FC1CBB18A766DEDDD23012 /* Embed Pods Frameworks */,
+				536E2E0B4A438DC9F48897F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,14 +382,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		536E2E0B4A438DC9F48897F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49272C6A16ED8AAF7EC0F24 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FC1CBB18A766DEDDD23012 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4BD0AC261C53448C00D61125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD0ACA61C5390B300D61125 /* ViewController.m in Sources */,
 				4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */,
 				4BD0AC8C1C53818600D61125 /* main.m in Sources */,
-				4BD0AC8E1C53818600D61125 /* ViewController.m in Sources */,
 				4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -472,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -481,13 +556,17 @@
 		};
 		4BD0AC581C53448C00D61125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = HoundSDK/;
+				LIBRARY_SEARCH_PATHS = (
+					HoundSDK/,
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -495,13 +574,17 @@
 		};
 		4BD0AC591C53448C00D61125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = HoundSDK/;
+				LIBRARY_SEARCH_PATHS = (
+					HoundSDK/,
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
