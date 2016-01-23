@@ -39,23 +39,32 @@ function newTab() {
     });
 }
 
-newTab();
-
 tasksRef.on("value", function(snapshot) {
   let data = snapshot.val();
   for(var id in data) {
     let taskItem = data[id];
     let text = taskItem.text; 
+    text = text.toLowerCase();
 
     // Get array of words
     text = text.split(" ");
     let task = getTaskName(text);
+    if (task.name == null) {
+      console.log("null task!");
+      console.log(text);
+      tasksRef.child(id).remove();
+      return;
+    }
+
+    console.log(task);
 
     if (task.data.scope === "content") {
       chrome.tabs.getSelected(function(tab) {
-        chrome.tabs.sendMessage(tab.id, {function_name: task.name}, function(response) {
-          console.log(response);
-        });
+        chrome.tabs.sendMessage(tab.id,
+                                {function_name: task.name, params: task.params},
+                                function(response) {
+                                  console.log(response);
+                                });
       });
     } else if (task.data.scope === "browser") {
       let fn = window[task.name];
@@ -63,8 +72,7 @@ tasksRef.on("value", function(snapshot) {
     }
 
     // Delete the task
-//    tasksRef.child(id).remove();
-
+    tasksRef.child(id).remove();
   }
 });
 

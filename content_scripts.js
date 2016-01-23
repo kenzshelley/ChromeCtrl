@@ -25,6 +25,33 @@ function play() {
   }
 }
 
+function volume(params) {
+  console.log("changing volume!");
+  const vids = document.getElementsByTagName("video");
+  if (vids.length === 0) return; 
+  const vid = vids[0];
+  if (!params || !params.direction) return;
+
+  if (params.direction == "up" || params.direction == "higher") {
+    var dir = "up";
+  } else if (params.direction == "down" || params.direction == "lower") {
+    var dir = "down";
+  }
+
+  let amount = .1;
+  if (params.amount == "lot") {
+    amount = .2; 
+  } else if (params.amount == "little") {
+    amount = .05;
+  }
+
+  if (dir == "up") { 
+    if (vid.volume <= (1 - amount)) vid.volume += amount;
+  } else {
+    if (vid.volume >= amount) vid.volume -= amount;
+  }
+}
+
 function volumeUp() {
   console.log("volume up");
 	var vid = document.getElementsByTagName("video");
@@ -37,12 +64,20 @@ function volumeDown() {
 	if (vid.length != 0 & vid[0].volume >= 0.02) vid[0].volume -= .02;
 }
 
-function scrollDown() {
-  window.scrollBy(0, 200);
-}
+function scroll(params) {
+  if (!params) return;
+  if (!params.direction) return;
+  const dir = params.direction;
+  
+  let amount = 400;
+  if (params.amount == "lot") {
+    amount = 600;
+  } else if (params.amount == "little") {
+    amount = 200; 
+  }
 
-function scrollUp() {
-  window.scrollBy(0, -200);
+  if (dir == "up") amount = amount * -1;
+  window.scrollBy(0, amount);
 }
 
 function fastForward() {
@@ -59,11 +94,9 @@ function back() {
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
-  console.log(request);
 
   let fn = window[request.function_name];
-  console.log(fn);
-  fn();
+  fn(request.params);
 
   sendResponse("received the message!");
   return true;
