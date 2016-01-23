@@ -49,6 +49,9 @@ function fastForward() {
  document.getElementsByTagName("video")[0].playbackRate = 5.0;
 }
 
+function reload() {
+  location.reload();
+}
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
