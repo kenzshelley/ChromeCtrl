@@ -52,18 +52,6 @@ function volume(params) {
   }
 }
 
-function volumeUp() {
-  console.log("volume up");
-	var vid = document.getElementsByTagName("video");
-	if (vid.length != 0 & vid[0].volume <= .98) vid[0].volume += .02;
-}
-
-function volumeDown() {
-  console.log("volume down");
-	var vid = document.getElementsByTagName("video");
-	if (vid.length != 0 & vid[0].volume >= 0.02) vid[0].volume -= .02;
-}
-
 function scroll(params) {
   if (!params) return;
   if (!params.direction) return;

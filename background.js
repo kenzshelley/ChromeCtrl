@@ -68,7 +68,7 @@ tasksRef.on("value", function(snapshot) {
       });
     } else if (task.data.scope === "browser") {
       let fn = window[task.name];
-      fn();
+      fn(task.params);
     }
 
     // Delete the task

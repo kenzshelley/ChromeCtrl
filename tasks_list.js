@@ -62,5 +62,40 @@ const tasks = {
         "little"
       ]
     }
+  },
+  "fastforward": {
+    "function": "fastForward",
+    "keywords": [
+      "fastforward",
+      "fast",
+      "forward",
+      "ahead"
+    ],
+    "scope": "content",
+  },
+  "reload": {
+    "function": "reload",
+    "keywords": [
+      "reload",
+      "refresh",
+      "load"
+    ],
+    "scope": "content"
+  },
+  "newTab": {
+    "function": "newTab",
+    "keywords": [
+      "new",
+      "tab", 
+      "create"
+    ],
+    "scope": "background"
+  },
+  "back": {
+    "function": "back",
+    "keywords" [ 
+      "back" 
+    ],
+    "scope": "content"
   }
 }
