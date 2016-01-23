@@ -89,7 +89,7 @@ function reload() {
 }
 
 function back() {
-  location.assign(window.opener());
+  history.back();
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
