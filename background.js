@@ -34,26 +34,29 @@ function nextTab() {
 }
 
 tasksRef.on("value", function(snapshot) {
-  console.log("something changed!")
   let data = snapshot.val();
   for(var id in data) {
-    let task = data[id];
-    let text = task.text; 
-    console.log(task);
-    console.log(text);
+    let taskItem = data[id];
+    let text = taskItem.text; 
 
     // Get array of words
     text = text.split(" ");
-    // Delete the task
-//    tasksRef.child(id).remove();
+    let task = getTaskName(text);
 
+    if (task.data.scope === "content") {
       chrome.tabs.getSelected(function(tab) {
-        console.log(tab.id); 
-        console.log("sending tab");
-        chrome.tabs.sendMessage(tab.id, {function_name: "play"}, function(response) {
+        chrome.tabs.sendMessage(tab.id, {function_name: task.name}, function(response) {
           console.log(response);
         });
       });
+    } else if (task.data.scope === "browser") {
+      let fn = window[task.name];
+      fn();
+    }
+
+    // Delete the task
+    tasksRef.child(id).remove();
+
   }
 });
 
