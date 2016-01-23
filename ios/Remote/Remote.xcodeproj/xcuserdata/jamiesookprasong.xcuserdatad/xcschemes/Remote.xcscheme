@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+               BlueprintIdentifier = "4BD0AC291C53448C00D61125"
                BuildableName = "Remote.app"
                BlueprintName = "Remote"
                ReferencedContainer = "container:Remote.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABE71C532D1800D61125"
+               BlueprintIdentifier = "4BD0AC421C53448C00D61125"
                BuildableName = "RemoteTests.xctest"
                BlueprintName = "RemoteTests"
                ReferencedContainer = "container:Remote.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABF21C532D1800D61125"
+               BlueprintIdentifier = "4BD0AC4D1C53448C00D61125"
                BuildableName = "RemoteUITests.xctest"
                BlueprintName = "RemoteUITests"
                ReferencedContainer = "container:Remote.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
