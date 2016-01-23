@@ -92,11 +92,13 @@
                 
                 self.responseTextView.text = commandResult.writtenResponse;
                 
-                // Any properties from the documentation can be accessed through the keyed accessors, e.g.:
-                
-                NSDictionary* nativeData = commandResult[@"NativeData"];
-                
-                NSLog(@"NativeData: %@", nativeData);
+                Firebase *usersRef = [[Firebase alloc] initWithUrl:@"https://remote-hound.firebaseio.com/users"];
+                NSString* username = @"test_user";
+                Firebase* userRef = [usersRef childByAppendingPath:username];
+                Firebase* userTasksRef = [userRef childByAppendingPath:@"tasks"];
+                Firebase* taskRef = [userTasksRef childByAutoId];
+                NSDictionary* task = @{ @"text": commandResult.writtenResponse };
+                [taskRef setValue:task];
             }
             
             [self dismissSearch];
