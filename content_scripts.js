@@ -18,6 +18,7 @@ function pausePlay(isPlay) {
 }
 
 function switchTab() {
+  console.log("In switch tab");
   // first, get currently active tab
   chrome.tabs.query({active: true}, function(tabs) {
     if (tabs.length) {
@@ -39,3 +40,11 @@ function switchTab() {
     }
   });
 }
+console.log("TEST");
+switchTab();
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  console.log(request);  
+  sendResponse("HELLO");
+});
+	
