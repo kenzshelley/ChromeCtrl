@@ -15,5 +15,8 @@
   "permissions": [
     "activeTab",
     "tabs"
+  ],
+  "content_scripts": [
+    "content_scripts.js"
   ]
 }
