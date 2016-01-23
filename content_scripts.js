@@ -14,6 +14,7 @@ console.log("Pause");
 
 function play() {
   console.log("Play");
+  document.getElementsByTagName("video")[0].playbackRate = 1.0;
   var videoTagElements = document.getElementsByTagName("video");
   if (videoTagElements.length != 0) {
     videoTagElements[0].play();
@@ -35,6 +36,11 @@ function volumeDown() {
 	var vid = document.getElementsByTagName("video");
 	if (vid.length != 0 & vid[0].volume >= 0.02) vid[0].volume -= .02
 }
+
+function fastForward() {
+ document.getElementsByTagName("video")[0].playbackRate = 5.0;
+}
+
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
