@@ -18,10 +18,11 @@ function pausePlay(isPlay) {
 }
 
 
-console.log("TEST");
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log(request);  
-  sendResponse("HELLO");
+  console.log("Received message!");
+
+
+  sendResponse("received the message!");
+  return true;
 });
 	

@@ -48,11 +48,10 @@ tasksRef.on("value", function(snapshot) {
     // Delete the task
 //    tasksRef.child(id).remove();
 
-    console.log("hi");
-      console.log("hello");
       chrome.tabs.getSelected(function(tab) {
-        console.log(tab); 
-        chrome.tabs.sendMessage(tab.id, {function: "play"}, function(response) {
+        console.log(tab.id); 
+        console.log("sending tab");
+        chrome.tabs.sendMessage(tab.id, {function_name: "play"}, function(response) {
           console.log(response);
         });
       });
