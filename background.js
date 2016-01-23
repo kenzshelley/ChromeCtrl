@@ -77,9 +77,31 @@ function nextTab() {
 function newTab() {
     chrome.tabs.create({}, function (tab) {
       console.log(tab);
+      console.log("is tab open?")
+
     });
 }
 
+
+//newTab();
+
+function createBookmark() {
+     var url = "";
+      chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+        url = tabs[0].url;
+        console.log("test");
+      });
+
+      chrome.bookmarks.create({'title': url,
+                                'url': url
+                             },
+                             function(newFolder) {
+        console.log("added folder: " + newFolder.title);
+                             });
+      console.log("Is anything happening?");
+}
+
+createBookmark();
 
 
 

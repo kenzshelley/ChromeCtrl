@@ -78,6 +78,7 @@ function reload() {
 
 function back() {
   history.back();
+
 }
 
 /* 

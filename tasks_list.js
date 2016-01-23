@@ -107,4 +107,13 @@ const tasks = {
     "scope": "content",
     "sendText": "true"
   }
+  "bookmark": {
+    "function": "createBookmark",
+    "keywords": [
+      "bookmark",
+      "favorite",
+      "save"
+    ],
+    "scope": "background"
+  }
 }

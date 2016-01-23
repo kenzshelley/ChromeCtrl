@@ -15,7 +15,8 @@
   },
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs", 
+    "bookmarks"
   ],
   "content_scripts": [
     { "matches":["<all_urls>"],
