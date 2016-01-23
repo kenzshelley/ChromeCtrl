@@ -3,7 +3,7 @@
 const ref = new Firebase('https://remote-hound.firebaseio.com/')
 
 const userid = "test_user";
-const task = {
-  "text": "next tab"
+let task = {
+  "text": "volume down a lot"
 }
 ref.child("users").child(userid).child("tasks").push(task);

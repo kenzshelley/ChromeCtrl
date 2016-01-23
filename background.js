@@ -39,8 +39,6 @@ function newTab() {
     });
 }
 
-newTab();
-
 tasksRef.on("value", function(snapshot) {
   let data = snapshot.val();
   for(var id in data) {
@@ -62,9 +60,11 @@ tasksRef.on("value", function(snapshot) {
 
     if (task.data.scope === "content") {
       chrome.tabs.getSelected(function(tab) {
-        chrome.tabs.sendMessage(tab.id, {function_name: task.name}, function(response) {
-          console.log(response);
-        });
+        chrome.tabs.sendMessage(tab.id,
+                                {function_name: task.name, params: task.params},
+                                function(response) {
+                                  console.log(response);
+                                });
       });
     } else if (task.data.scope === "browser") {
       let fn = window[task.name];
