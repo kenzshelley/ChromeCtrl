@@ -76,6 +76,10 @@ function reload() {
   location.reload();
 }
 
+function back() {
+  location.assign(window.opener());
+}
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
 
