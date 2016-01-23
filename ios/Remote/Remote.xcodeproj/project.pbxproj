@@ -16,7 +16,6 @@
 		4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7E1C53818600D61125 /* AppImages.xcassets */; };
 		4BD0AC891C53818600D61125 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7F1C53818600D61125 /* Base.lproj */; };
 		4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC801C53818600D61125 /* Images.xcassets */; };
-		4BD0AC8B1C53818600D61125 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC811C53818600D61125 /* Info.plist */; };
 		4BD0AC8C1C53818600D61125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC821C53818600D61125 /* main.m */; };
 		4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC841C53818600D61125 /* NavigationController.m */; };
 		4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */; };
@@ -357,7 +356,6 @@
 			files = (
 				4BD0AC681C53453C00D61125 /* HoundSDK.xcassets in Resources */,
 				4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */,
-				4BD0AC8B1C53818600D61125 /* Info.plist in Resources */,
 				4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */,
 				4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */,
 				4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */,
@@ -513,6 +511,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Remote;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -549,6 +548,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Remote;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

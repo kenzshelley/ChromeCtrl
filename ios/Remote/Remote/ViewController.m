@@ -45,6 +45,74 @@
         initWithCustomView:imageView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // Turn on battery monitoring
+    UIDevice *device = [UIDevice currentDevice];
+    device.batteryMonitoringEnabled = YES;
+    
+    // Check current charging state to detect if iPhone is connected to a power source
+    UIDeviceBatteryState currentState = [[UIDevice currentDevice] batteryState];
+    if (currentState == UIDeviceBatteryStateCharging || currentState == UIDeviceBatteryStateFull) {
+        [self turnOnHotPhraseListener];
+    } else {
+        [self turnOffHotPhraseListener];
+    }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluggedDetected:) name:UIDeviceBatteryStateDidChangeNotification object:nil];
+}
+
+- (void)pluggedDetected:(NSNotification*)notification
+{
+    UIDeviceBatteryState currentState = [[UIDevice currentDevice] batteryState];
+    if (currentState == UIDeviceBatteryStateCharging || currentState == UIDeviceBatteryStateFull) {
+        self.responseTextView.text = @"plugInDetected";
+        [self turnOnHotPhraseListener];
+    } else {
+        self.responseTextView.text = @"unplugDetected";
+        [self turnOffHotPhraseListener];
+    }
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluggedDetected:) name:UIDeviceBatteryStateDidChangeNotification object:nil];
+    
+}
+
+- (void)turnOnHotPhraseListener
+{
+    HoundVoiceSearch.instance.enableHotPhraseDetection = YES;
+    [HoundVoiceSearch.instance startListeningWithCompletionHandler:^(NSError* error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error)
+            {
+                self.responseTextView.text = error.localizedDescription;
+            }
+        });
+    }];
+    
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(hotPhrase) name:HoundVoiceSearchHotPhraseNotification object:nil];
+}
+
+- (void)turnOffHotPhraseListener
+{
+    HoundVoiceSearch.instance.enableHotPhraseDetection = NO;
+    [HoundVoiceSearch.instance stopListeningWithCompletionHandler:^(NSError* error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error)
+            {
+                self.responseTextView.text = error.localizedDescription;
+            }
+        });
+    }];
+}
+
+- (void)hotPhrase
+{
+    // "OK Hound" detected
+    [self search:nil];
+}
+
 - (IBAction)search:(UIButton*)button
 {
     self.responseTextView.text = nil;
@@ -57,7 +125,6 @@
     };
     
     // Show listening screen
-    
     [Houndify.instance
         presentListeningViewControllerInViewController:self.navigationController
         fromView:button
@@ -67,8 +134,6 @@
             
             if (error)
             {
-                // Check for errors
-                
                 if ([error.domain isEqualToString:HoundVoiceSearchErrorDomain]
                     && error.code == HoundVoiceSearchErrorCodeCancelled)
                 {
@@ -87,11 +152,10 @@
             else
             {
                 // Display written response in UI
-                
                 HoundDataCommandResult* commandResult = response.allResults.firstObject;
-                
                 self.responseTextView.text = commandResult.writtenResponse;
                 
+                // Post the task to Firebase
                 Firebase *usersRef = [[Firebase alloc] initWithUrl:@"https://remote-hound.firebaseio.com/users"];
                 NSString* username = @"test_user";
                 Firebase* userRef = [usersRef childByAppendingPath:username];
