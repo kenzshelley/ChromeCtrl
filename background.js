@@ -55,7 +55,7 @@ tasksRef.on("value", function(snapshot) {
     }
 
     // Delete the task
-    tasksRef.child(id).remove();
+//    tasksRef.child(id).remove();
 
   }
 });
