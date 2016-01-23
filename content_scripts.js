@@ -80,6 +80,13 @@ function back() {
   history.back();
 }
 
+/* 
+  Expects a 
+*/
+function click(params) {
+  
+}
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
 

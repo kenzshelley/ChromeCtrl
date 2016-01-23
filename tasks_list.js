@@ -93,9 +93,18 @@ const tasks = {
   },
   "back": {
     "function": "back",
-    "keywords" [ 
+    "keywords": [ 
       "back" 
     ],
     "scope": "content"
+  },
+  "click": {
+    "function": "click",
+    "keywords": [
+      "select",
+      "click",
+    ],
+    "scope": "content",
+    "sendText": "true"
   }
 }

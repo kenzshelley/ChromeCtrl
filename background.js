@@ -7,8 +7,8 @@ $("head").append(s);
 
 const ref = new Firebase('https://remote-hound.firebaseio.com/')
 
-let userid = "test_user";
-const tasksRef = ref.child("users").child(userid).child("tasks");
+let uid = ref.getAuth().uid;
+const tasksRef = ref.child("users").child(uid).child("tasks");
 
 function nextTab() {
   // first, get currently active tab
