@@ -1,22 +1,24 @@
-function pausePlay(isPlay) {
+function pause() {
 	var videoTagElements = document.getElementsByTagName("video");
 	if (videoTagElements.length != 0) {
-		if (isPlay == true) {
-			videoTagElements[0].play();
-		} else {
-			videoTagElements[0].pause();
-		}		
+    videoTagElements[0].pause();
 	} else if (typeof ifp !== undefined) {
-		if (isPlay == true) {	
-			ifp.play();
-		} else {
-			ifp.pause();
-		}
+    ifp.pause();
 	} else {
 		console.log("wrong move, try again");
 	}
 }
 
+function play() {
+  var videoTagElements = document.getElementsByTagName("video");
+  if (videoTagElements.length != 0) {
+    videoTagElements[0].play();
+  } else if (typeof ifp !== undefined) {
+    ifp.play();
+  } else {
+    console.log("wrong move, try again");
+  }
+}
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");

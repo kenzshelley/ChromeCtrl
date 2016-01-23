@@ -10,8 +10,7 @@ const ref = new Firebase('https://remote-hound.firebaseio.com/')
 let userid = "test_user";
 const tasksRef = ref.child("users").child(userid).child("tasks");
 
-function switchTab() {
-  console.log("In switch tab");
+function nextTab() {
   // first, get currently active tab
   chrome.tabs.query({active: true}, function (tabs) {
     if (tabs.length) {
