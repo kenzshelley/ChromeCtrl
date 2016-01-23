@@ -1,32 +1,36 @@
 //
 //  ViewController.m
-//  Remote
+//  HoundifySDK Test Application
 //
-//  Created by Jamie Sookprasong on 23/1/16.
-//  Copyright © 2016 Jamie Sookprasong. All rights reserved.
+//  Created by Cyril Austin on 10/29/15.
+//  Copyright © 2015 SoundHound, Inc. All rights reserved.
 //
 
-// adapted from SoundHound's Houndify Demo
+// Above is the original attribution.
+// The original code has since been modified by Jamei Sookprasong
 
 #import "ViewController.h"
 #import <HoundSDK/HoundSDK.h>
 
 #define VOICE_SEARCH_END_POINT       @"https://api.houndify.com/v1/audio"
 
-@interface ViewController ()
+#pragma mark - ViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *textFromSpeech;
+@interface ViewController()
+
+@property(nonatomic, strong) IBOutlet UITextView* responseTextView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-
+    
     // Setup UI
     
-    self.textFromSpeech.text = nil;
+    self.responseTextView.text = nil;
     
     UIImage* image = [UIImage imageNamed:@"ic-hound-small"];
     
@@ -37,63 +41,66 @@
     imageView.frame = CGRectMake(0, 0, 32, 32);
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
-                                             initWithCustomView:imageView];
+        initWithCustomView:imageView];
 }
-- (IBAction)listen:(UIButton *)sender {
-    self.textFromSpeech.text = nil;
+
+- (IBAction)search:(UIButton*)button
+{
+    self.responseTextView.text = nil;
     
     NSURL* URL = [NSURL URLWithString:VOICE_SEARCH_END_POINT];
     
     NSDictionary* requestInfo = @{
-                                  
-                                  // Insert request parameters
-                                  };
+    
+        // Insert request parameters
+    };
     
     // Show listening screen
     
     [Houndify.instance
-     presentListeningViewControllerInViewController:self.navigationController
-     fromView:sender
-     requestInfo:requestInfo
-     endPointURL:URL
-     responseHandler:^(NSError* error, HoundDataHoundServer* response, NSDictionary* dictionary) {
-         
-         if (error)
-         {
-             // Check for errors
-             
-             if ([error.domain isEqualToString:HoundVoiceSearchErrorDomain]
-                 && error.code == HoundVoiceSearchErrorCodeCancelled)
-             {
-                 self.textFromSpeech.text = @"Search cancelled";
-             }
-             else if ([error.domain isEqualToString:HoundVoiceSearchErrorDomain]
-                      && error.code == HoundVoiceSearchErrorCodeAuthenticationFailed)
-             {
-                 self.textFromSpeech.text = @"Authentication failed";
-             }
-             else
-             {
-                 self.textFromSpeech.text = @"Search failed";
-             }
-         }
-         else
-         {
-             // Display written response in UI
-             
-             HoundDataCommandResult* commandResult = response.allResults.firstObject;
-             
-             self.textFromSpeech.text = commandResult.writtenResponse;
-             
-             // Any properties from the documentation can be accessed through the keyed accessors, e.g.:
-             
-             NSDictionary* nativeData = commandResult[@"NativeData"];
-             
-             NSLog(@"NativeData: %@", nativeData);
-         }
-         
-         [self dismissSearch];
-     }];
+        presentListeningViewControllerInViewController:self.navigationController
+        fromView:button
+        requestInfo:requestInfo
+        endPointURL:URL
+        responseHandler:^(NSError* error, HoundDataHoundServer* response, NSDictionary* dictionary) {
+            
+            if (error)
+            {
+                // Check for errors
+                
+                if ([error.domain isEqualToString:HoundVoiceSearchErrorDomain]
+                    && error.code == HoundVoiceSearchErrorCodeCancelled)
+                {
+                    self.responseTextView.text = @"Search cancelled";
+                }
+                else if ([error.domain isEqualToString:HoundVoiceSearchErrorDomain]
+                    && error.code == HoundVoiceSearchErrorCodeAuthenticationFailed)
+                {
+                    self.responseTextView.text = @"Authentication failed";
+                }
+                else
+                {
+                    self.responseTextView.text = @"Search failed";
+                }
+            }
+            else
+            {
+                // Display written response in UI
+                
+                HoundDataCommandResult* commandResult = response.allResults.firstObject;
+                
+                self.responseTextView.text = commandResult.writtenResponse;
+                
+                // Any properties from the documentation can be accessed through the keyed accessors, e.g.:
+                
+                NSDictionary* nativeData = commandResult[@"NativeData"];
+                
+                NSLog(@"NativeData: %@", nativeData);
+            }
+            
+            [self dismissSearch];
+        }
+    ];
 }
 
 - (void)dismissSearch

@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BD0AC2F1C53448C00D61125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC2E1C53448C00D61125 /* main.m */; };
-		4BD0AC351C53448C00D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC341C53448C00D61125 /* ViewController.m */; };
-		4BD0AC381C53448C00D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC361C53448C00D61125 /* Main.storyboard */; };
-		4BD0AC3A1C53448C00D61125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC391C53448C00D61125 /* Assets.xcassets */; };
-		4BD0AC3D1C53448C00D61125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC3B1C53448C00D61125 /* LaunchScreen.storyboard */; };
 		4BD0AC481C53448C00D61125 /* RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC471C53448C00D61125 /* RemoteTests.m */; };
 		4BD0AC531C53448C00D61125 /* RemoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC521C53448C00D61125 /* RemoteUITests.m */; };
 		4BD0AC681C53453C00D61125 /* HoundSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC651C53453C00D61125 /* HoundSDK.xcassets */; };
 		4BD0AC691C53453C00D61125 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC661C53453C00D61125 /* include */; };
 		4BD0AC6A1C53453C00D61125 /* libHoundSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC671C53453C00D61125 /* libHoundSDK.a */; };
-		4BD0AC6C1C53476D00D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC6B1C53476D00D61125 /* AVFoundation.framework */; };
-		4BD0AC6E1C53477100D61125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC6D1C53477100D61125 /* AudioToolbox.framework */; };
-		4BD0AC701C53477700D61125 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC6F1C53477700D61125 /* Accelerate.framework */; };
-		4BD0AC721C53477F00D61125 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC711C53477F00D61125 /* libc++.tbd */; };
-		4BD0AC741C53478800D61125 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC731C53478800D61125 /* libz.tbd */; };
-		4BD0AC761C5348DE00D61125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC311C53448C00D61125 /* AppDelegate.m */; };
+		4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7D1C53818600D61125 /* AppDelegate.m */; };
+		4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7E1C53818600D61125 /* AppImages.xcassets */; };
+		4BD0AC891C53818600D61125 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7F1C53818600D61125 /* Base.lproj */; };
+		4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC801C53818600D61125 /* Images.xcassets */; };
+		4BD0AC8B1C53818600D61125 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC811C53818600D61125 /* Info.plist */; };
+		4BD0AC8C1C53818600D61125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC821C53818600D61125 /* main.m */; };
+		4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC841C53818600D61125 /* NavigationController.m */; };
+		4BD0AC8E1C53818600D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC861C53818600D61125 /* ViewController.m */; };
+		4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */; };
+		4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC911C5381C400D61125 /* AudioToolbox.framework */; };
+		4BD0AC941C5381CA00D61125 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC931C5381CA00D61125 /* Accelerate.framework */; };
+		4BD0AC961C5381D200D61125 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC951C5381D200D61125 /* libc++.tbd */; };
+		4BD0AC981C5381D700D61125 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC971C5381D700D61125 /* libz.tbd */; };
+		4BD0AC9C1C53820E00D61125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC9B1C53820E00D61125 /* UIKit.framework */; };
+		4BD0AC9E1C53821800D61125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC9D1C53821800D61125 /* Foundation.framework */; };
+		4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA01C53825700D61125 /* LaunchScreen.xib */; };
+		4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA21C53826A00D61125 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +50,6 @@
 
 /* Begin PBXFileReference section */
 		4BD0AC2A1C53448C00D61125 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD0AC2E1C53448C00D61125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4BD0AC301C53448C00D61125 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4BD0AC311C53448C00D61125 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4BD0AC331C53448C00D61125 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4BD0AC341C53448C00D61125 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4BD0AC371C53448C00D61125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BD0AC391C53448C00D61125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BD0AC3C1C53448C00D61125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4BD0AC3E1C53448C00D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BD0AC431C53448C00D61125 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD0AC471C53448C00D61125 /* RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTests.m; sourceTree = "<group>"; };
 		4BD0AC491C53448C00D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,11 +59,26 @@
 		4BD0AC651C53453C00D61125 /* HoundSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HoundSDK.xcassets; sourceTree = "<group>"; };
 		4BD0AC661C53453C00D61125 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 		4BD0AC671C53453C00D61125 /* libHoundSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHoundSDK.a; sourceTree = "<group>"; };
-		4BD0AC6B1C53476D00D61125 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4BD0AC6D1C53477100D61125 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		4BD0AC6F1C53477700D61125 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		4BD0AC711C53477F00D61125 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		4BD0AC731C53478800D61125 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4BD0AC7C1C53818600D61125 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BD0AC7D1C53818600D61125 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BD0AC7E1C53818600D61125 /* AppImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppImages.xcassets; sourceTree = "<group>"; };
+		4BD0AC7F1C53818600D61125 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		4BD0AC801C53818600D61125 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BD0AC811C53818600D61125 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD0AC821C53818600D61125 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BD0AC831C53818600D61125 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		4BD0AC841C53818600D61125 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		4BD0AC851C53818600D61125 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4BD0AC861C53818600D61125 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BD0AC911C5381C400D61125 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4BD0AC931C5381CA00D61125 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4BD0AC951C5381D200D61125 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4BD0AC971C5381D700D61125 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4BD0AC9B1C53820E00D61125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BD0AC9D1C53821800D61125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BD0ACA01C53825700D61125 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4BD0ACA21C53826A00D61125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +86,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0AC741C53478800D61125 /* libz.tbd in Frameworks */,
-				4BD0AC721C53477F00D61125 /* libc++.tbd in Frameworks */,
-				4BD0AC701C53477700D61125 /* Accelerate.framework in Frameworks */,
-				4BD0AC6E1C53477100D61125 /* AudioToolbox.framework in Frameworks */,
-				4BD0AC6C1C53476D00D61125 /* AVFoundation.framework in Frameworks */,
+				4BD0AC9E1C53821800D61125 /* Foundation.framework in Frameworks */,
+				4BD0AC9C1C53820E00D61125 /* UIKit.framework in Frameworks */,
+				4BD0AC981C5381D700D61125 /* libz.tbd in Frameworks */,
+				4BD0AC961C5381D200D61125 /* libc++.tbd in Frameworks */,
+				4BD0AC941C5381CA00D61125 /* Accelerate.framework in Frameworks */,
+				4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */,
+				4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */,
 				4BD0AC6A1C53453C00D61125 /* libHoundSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,24 +138,16 @@
 		4BD0AC2C1C53448C00D61125 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0AC301C53448C00D61125 /* AppDelegate.h */,
-				4BD0AC311C53448C00D61125 /* AppDelegate.m */,
-				4BD0AC361C53448C00D61125 /* Main.storyboard */,
-				4BD0AC601C53449B00D61125 /* View Controllers */,
-				4BD0AC611C5344B000D61125 /* Resources */,
-				4BD0AC751C53479C00D61125 /* Frameworks */,
-				4BD0AC2D1C53448C00D61125 /* Supporting Files */,
+				4BD0AC7C1C53818600D61125 /* AppDelegate.h */,
+				4BD0AC7D1C53818600D61125 /* AppDelegate.m */,
+				4BD0ACA21C53826A00D61125 /* Main.storyboard */,
+				4BD0AC9F1C53822900D61125 /* View Controllers */,
+				4BD0AC991C5381E300D61125 /* Resources */,
+				4BD0ACA41C53827300D61125 /* Supporting Files */,
+				4BD0AC9A1C5381FE00D61125 /* Frameworks */,
+				4BD0AC7F1C53818600D61125 /* Base.lproj */,
 			);
 			path = Remote;
-			sourceTree = "<group>";
-		};
-		4BD0AC2D1C53448C00D61125 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4BD0AC3E1C53448C00D61125 /* Info.plist */,
-				4BD0AC2E1C53448C00D61125 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4BD0AC461C53448C00D61125 /* RemoteTests */ = {
@@ -162,24 +168,6 @@
 			path = RemoteUITests;
 			sourceTree = "<group>";
 		};
-		4BD0AC601C53449B00D61125 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				4BD0AC331C53448C00D61125 /* ViewController.h */,
-				4BD0AC341C53448C00D61125 /* ViewController.m */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		4BD0AC611C5344B000D61125 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4BD0AC391C53448C00D61125 /* Assets.xcassets */,
-				4BD0AC3B1C53448C00D61125 /* LaunchScreen.storyboard */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		4BD0AC641C53451700D61125 /* HoundSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,17 +178,48 @@
 			name = HoundSDK;
 			sourceTree = "<group>";
 		};
-		4BD0AC751C53479C00D61125 /* Frameworks */ = {
+		4BD0AC991C5381E300D61125 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0AC731C53478800D61125 /* libz.tbd */,
-				4BD0AC711C53477F00D61125 /* libc++.tbd */,
-				4BD0AC6B1C53476D00D61125 /* AVFoundation.framework */,
-				4BD0AC6F1C53477700D61125 /* Accelerate.framework */,
-				4BD0AC6D1C53477100D61125 /* AudioToolbox.framework */,
+				4BD0AC7E1C53818600D61125 /* AppImages.xcassets */,
+				4BD0AC801C53818600D61125 /* Images.xcassets */,
+				4BD0ACA01C53825700D61125 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4BD0AC9A1C5381FE00D61125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0AC9D1C53821800D61125 /* Foundation.framework */,
+				4BD0AC9B1C53820E00D61125 /* UIKit.framework */,
+				4BD0AC971C5381D700D61125 /* libz.tbd */,
+				4BD0AC951C5381D200D61125 /* libc++.tbd */,
+				4BD0AC931C5381CA00D61125 /* Accelerate.framework */,
+				4BD0AC911C5381C400D61125 /* AudioToolbox.framework */,
+				4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
-			path = ..;
+			sourceTree = "<group>";
+		};
+		4BD0AC9F1C53822900D61125 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0AC831C53818600D61125 /* NavigationController.h */,
+				4BD0AC841C53818600D61125 /* NavigationController.m */,
+				4BD0AC851C53818600D61125 /* ViewController.h */,
+				4BD0AC861C53818600D61125 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4BD0ACA41C53827300D61125 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0AC811C53818600D61125 /* Info.plist */,
+				4BD0AC821C53818600D61125 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,11 +328,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0AC3D1C53448C00D61125 /* LaunchScreen.storyboard in Resources */,
 				4BD0AC681C53453C00D61125 /* HoundSDK.xcassets in Resources */,
-				4BD0AC3A1C53448C00D61125 /* Assets.xcassets in Resources */,
+				4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */,
+				4BD0AC8B1C53818600D61125 /* Info.plist in Resources */,
+				4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */,
+				4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */,
+				4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */,
+				4BD0AC891C53818600D61125 /* Base.lproj in Resources */,
 				4BD0AC691C53453C00D61125 /* include in Resources */,
-				4BD0AC381C53448C00D61125 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0AC761C5348DE00D61125 /* AppDelegate.m in Sources */,
-				4BD0AC351C53448C00D61125 /* ViewController.m in Sources */,
-				4BD0AC2F1C53448C00D61125 /* main.m in Sources */,
+				4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */,
+				4BD0AC8C1C53818600D61125 /* main.m in Sources */,
+				4BD0AC8E1C53818600D61125 /* ViewController.m in Sources */,
+				4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,25 +397,6 @@
 			targetProxy = 4BD0AC4F1C53448C00D61125 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4BD0AC361C53448C00D61125 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BD0AC371C53448C00D61125 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4BD0AC3B1C53448C00D61125 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BD0AC3C1C53448C00D61125 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BD0AC551C53448C00D61125 /* Debug */ = {

@@ -1,14 +1,16 @@
 //
 //  AppDelegate.h
-//  Remote
+//  HoundifySDK Test Application
 //
-//  Created by Jamie Sookprasong on 23/1/16.
-//  Copyright © 2016 Jamie Sookprasong. All rights reserved.
+//  Created by Cyril Austin on 10/29/15.
+//  Copyright © 2015 SoundHound, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - AppDelegate
+
+@interface AppDelegate : UIResponder<UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
