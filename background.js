@@ -33,6 +33,14 @@ function nextTab() {
   });
 }
 
+function newTab() {
+    chrome.tabs.create({}, function (tab) {
+      console.log(tab);
+    });
+}
+
+newTab();
+
 tasksRef.on("value", function(snapshot) {
   let data = snapshot.val();
   for(var id in data) {

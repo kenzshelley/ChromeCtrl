@@ -28,13 +28,21 @@ function play() {
 function volumeUp() {
   console.log("volume up");
 	var vid = document.getElementsByTagName("video");
-	if (vid.length != 0 & vid[0].volume <= .98) vid[0].volume += .02
+	if (vid.length != 0 & vid[0].volume <= .98) vid[0].volume += .02;
 }
 
 function volumeDown() {
   console.log("volume down");
 	var vid = document.getElementsByTagName("video");
-	if (vid.length != 0 & vid[0].volume >= 0.02) vid[0].volume -= .02
+	if (vid.length != 0 & vid[0].volume >= 0.02) vid[0].volume -= .02;
+}
+
+function scrollDown() {
+  window.scrollBy(0, 200);
+}
+
+function scrollUp() {
+  window.scrollBy(0, -200);
 }
 
 function fastForward() {
