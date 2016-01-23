@@ -38,10 +38,19 @@ tasksRef.on("value", function(snapshot) {
   for(var id in data) {
     let taskItem = data[id];
     let text = taskItem.text; 
+    text = text.toLowerCase();
 
     // Get array of words
     text = text.split(" ");
     let task = getTaskName(text);
+    if (task.name == null) {
+      console.log("null task!");
+      console.log(text);
+      tasksRef.child(id).remove();
+      return;
+    }
+
+    console.log(task);
 
     if (task.data.scope === "content") {
       chrome.tabs.getSelected(function(tab) {
@@ -55,8 +64,7 @@ tasksRef.on("value", function(snapshot) {
     }
 
     // Delete the task
-//    tasksRef.child(id).remove();
-
+    tasksRef.child(id).remove();
   }
 });
 
