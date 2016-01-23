@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Remote",
+  "description": "This extension communicates with the remote app.",
+  "version": "1.0",
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio-demo.com; object-src 'self'",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}

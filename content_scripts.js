@@ -16,4 +16,5 @@ function pausePlay(isPlay) {
 		console.log("wrong move, try again");
 	}
 }
+
 	
