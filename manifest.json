@@ -17,7 +17,7 @@
     "tabs"
   ],
   "content_scripts": [
-    { "matches":["http://www.google.com/*"],
+    { "matches":["<all_urls>"],
       "js": ["content_scripts.js"]}
   ]
 }
