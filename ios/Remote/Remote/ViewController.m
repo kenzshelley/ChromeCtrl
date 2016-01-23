@@ -81,6 +81,7 @@
 
 - (void)turnOnHotPhraseListener
 {
+    self.responseTextView.text = @"turn on hot";
     HoundVoiceSearch.instance.enableHotPhraseDetection = YES;
     [HoundVoiceSearch.instance startListeningWithCompletionHandler:^(NSError* error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -96,6 +97,7 @@
 
 - (void)turnOffHotPhraseListener
 {
+    self.responseTextView.text = @"turn off hot";
     HoundVoiceSearch.instance.enableHotPhraseDetection = NO;
     [HoundVoiceSearch.instance stopListeningWithCompletionHandler:^(NSError* error) {
         dispatch_async(dispatch_get_main_queue(), ^{
