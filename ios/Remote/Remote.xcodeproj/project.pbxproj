@@ -481,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = HoundSDK/;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
@@ -494,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = HoundSDK/;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
@@ -568,6 +570,7 @@
 				4BD0AC591C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BD0AC5A1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +579,7 @@
 				4BD0AC5C1C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BD0AC5D1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +588,7 @@
 				4BD0AC5F1C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

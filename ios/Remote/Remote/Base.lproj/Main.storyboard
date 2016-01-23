@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uZ-nb-44e">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="ic-blk-tabbar-houndify-mic"/>
+                                <connections>
+                                    <action selector="listen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lz1-K8-KD3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHG-Mt-Tfz">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PHG-Mt-Tfz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9sM-3O-zb8"/>
+                            <constraint firstItem="7uZ-nb-44e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tly-Vw-9pW"/>
+                            <constraint firstItem="7uZ-nb-44e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBo-ZT-jxo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PHG-Mt-Tfz" secondAttribute="leading" id="fkm-4F-AiK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7uZ-nb-44e"/>
+                                <exclude reference="PHG-Mt-Tfz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9sM-3O-zb8"/>
+                                <exclude reference="fkm-4F-AiK"/>
+                                <exclude reference="Tly-Vw-9pW"/>
+                                <exclude reference="bBo-ZT-jxo"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7uZ-nb-44e"/>
+                                <include reference="PHG-Mt-Tfz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9sM-3O-zb8"/>
+                                <include reference="fkm-4F-AiK"/>
+                                <include reference="Tly-Vw-9pW"/>
+                                <include reference="bBo-ZT-jxo"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="textFromSpeech" destination="PHG-Mt-Tfz" id="6na-Rc-8ZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic-blk-tabbar-houndify-mic" width="16" height="25"/>
+    </resources>
 </document>
