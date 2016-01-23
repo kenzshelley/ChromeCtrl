@@ -93,11 +93,12 @@ function createBookmark() {
       });
 
       chrome.bookmarks.create({'title': url,
-                                'url': url
-                             },
-                             function(newFolder) {
-        console.log("added folder: " + newFolder.title);
-                             });
+                               'url': url
+                              })
+                              //,
+        //                      function(newFolder) {
+        // console.log("added folder: " + newFolder.title);
+        //                      });
       console.log("Is anything happening?");
 }
 
