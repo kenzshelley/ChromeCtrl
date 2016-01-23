@@ -106,7 +106,7 @@ const tasks = {
     ],
     "scope": "content",
     "sendText": "true"
-  }
+  },
   "bookmark": {
     "function": "createBookmark",
     "keywords": [
