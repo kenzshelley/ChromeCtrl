@@ -90,5 +90,12 @@ const tasks = {
       "create"
     ],
     "scope": "background"
+  },
+  "back": {
+    "function": "back",
+    "keywords" [ 
+      "back" 
+    ],
+    "scope": "content"
   }
 }
