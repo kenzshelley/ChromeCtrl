@@ -125,7 +125,7 @@ function search(params) {
     let query  = params.text;
     var url = "https://www.google.com/#q=";
     for (var key in query) {
-      if (key == "search") continue;
+      if (key.toLowerCase() == "search") continue;
       url += "+" + query[key];  
     }
 
