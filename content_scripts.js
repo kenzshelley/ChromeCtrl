@@ -79,7 +79,6 @@ function reload() {
 
 function back() {
   history.back();
-
 }
 
 /* 
@@ -96,15 +95,8 @@ function click(params) {
 
 }
 
-function search(params) {
-  console.log("hi");
-  console.log(params.text);
-  var str = "https://www.google.com/#q=" + params.query[0];
-  for(var x = 1; x++; x < params.query.length) {
-    str += "+" + params.query[x];
-  }
-  console.log(str);
-  window.location.href = str;
+function test() {
+  console.log("in test!");
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {

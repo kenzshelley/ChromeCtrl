@@ -34,6 +34,8 @@ chrome.extension.onConnect.addListener(function(port) {
 
         if (task.data.scope === "content") {
           chrome.tabs.getSelected(function(tab) {
+            console.log("Got a tab!");
+            console.log(tab);
             chrome.tabs.sendMessage(tab.id,
                                     {function_name: task.name, params: task.params},
                                     function(response) {
@@ -103,7 +105,6 @@ function newTab() {
     chrome.tabs.create({}, function (tab) {
       console.log(tab);
       console.log("is tab open?")
-
     });
 }
 
@@ -117,6 +118,18 @@ function closeTab() {
       chrome.tabs.remove(tabId);
     }
   })
+
+function search(params) {
+  chrome.tabs.create({}, function (tab) {
+    let query  = params.text;
+    var url = "https://www.google.com/#q=";
+    for (var key in query) {
+      if (key == "search") continue;
+      url += "+" + query[key];  
+    }
+
+    chrome.tabs.update(tab.id, {url: url});
+  });
 }
 
 function createBookmark() {
