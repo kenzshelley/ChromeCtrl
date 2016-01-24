@@ -184,5 +184,22 @@ const tasks = {
       "save"
     ],
     "scope": "browser"
+  },
+  "fullScreen": {
+    "function": "fullScreen",
+    "keywords": [
+    "fullscreen",
+    "full screen",
+    "maximize"
+    ],
+    "scope": "browser"
+  },
+  "standardScreen": {
+    "function": "standardScreen",
+    "keywords": [
+    "standard screen",
+    "normal screen",
+    "smaller screen",
+    "escape"]
   }
 }
