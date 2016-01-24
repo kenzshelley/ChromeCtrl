@@ -30,10 +30,14 @@ function getTaskName(wordList) {
         } 
       }
       bestTask = {
-        "name": taskName, 
+        "name": taskData.function, 
         "score": score,
         "data": taskData,
         "params": params
+      }
+      // Check if plaintext should be sent
+      if (taskData.sendText) {
+        bestTask.text = wordList; 
       }
     }
   } 

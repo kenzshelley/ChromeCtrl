@@ -16,7 +16,7 @@ const tasks = {
     "scope": "content"
   },
   "nextTab": {
-    "function": "pause",
+    "function": "nextTab",
     "keywords": [
       "next", 
       "tab", 
@@ -89,13 +89,31 @@ const tasks = {
       "tab", 
       "create"
     ],
-    "scope": "background"
+    "scope": "browser"
   },
   "back": {
     "function": "back",
-    "keywords" [ 
+    "keywords": [ 
       "back" 
     ],
     "scope": "content"
+  },
+  "click": {
+    "function": "click",
+    "keywords": [
+      "select",
+      "click",
+    ],
+    "scope": "content",
+    "sendText": "true"
+  },
+  "bookmark": {
+    "function": "createBookmark",
+    "keywords": [
+      "bookmark",
+      "favorite",
+      "save"
+    ],
+    "scope": "browser"
   }
 }

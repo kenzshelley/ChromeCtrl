@@ -78,6 +78,21 @@ function reload() {
 
 function back() {
   history.back();
+
+}
+
+/* 
+  Expects a 
+*/
+function click(params) {
+  let text = params.text;
+  // Attempt to find a link that matches text
+  let linkQuery = [];
+  // if the query contains 'on'
+  if (text.indexOf("on") >= 0) {
+    
+  }
+
 }
 
 function search(params) {
@@ -95,6 +110,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   console.log("Received message!");
 
   let fn = window[request.function_name];
+  console.log(request.function_name);
   fn(request.params);
 
   sendResponse("received the message!");
