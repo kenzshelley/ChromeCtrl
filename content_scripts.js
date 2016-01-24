@@ -73,12 +73,24 @@ function fastForward() {
  document.getElementsByTagName("video")[0].playbackRate = 5.0;
 }
 
+function rewind() {
+ document.getElementsByTagName("video")[0].currentTime -= 60.0;
+}
+
+function restart() {
+  document.getElementsByTagName("video")[0].currentTime = 0.0;
+}
+
 function reload() {
   location.reload();
 }
 
 function back() {
   history.back();
+}
+
+function forward() {
+  history.forward();
 }
 
 /* 

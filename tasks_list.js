@@ -85,7 +85,29 @@ const tasks = {
       "fastforward",
       "fast",
       "forward",
-      "ahead"
+      "ahead",
+      "movie",
+      "film",
+      "show"
+    ],
+    "scope": "content",
+  },
+  "rewind": {
+    "function": "rewind",
+    "keywords": [
+      "rewind",
+      "movie",
+      "film",
+      "show"
+    ],
+    "scope": "content",
+  },
+  "restart": {
+    "function": "restart",
+    "keywords": [
+      "restart",
+      "start",
+      "over"
     ],
     "scope": "content",
   },
@@ -120,7 +142,19 @@ const tasks = {
   "back": {
     "function": "back",
     "keywords": [ 
-      "back" 
+      "back",
+      "go",
+      "page"
+    ],
+    "scope": "content"
+  },
+  "forward": {
+    "function": "forward",
+    "keywords": [ 
+      "forward",
+      "forwards",
+      "go",
+      "page"
     ],
     "scope": "content"
   },
