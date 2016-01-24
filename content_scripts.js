@@ -81,18 +81,57 @@ function back() {
   history.back();
 }
 
-/* 
-  Expects a 
-*/
 function click(params) {
+  console.log("click!");
   let text = params.text;
-  // Attempt to find a link that matches text
-  let linkQuery = [];
-  // if the query contains 'on'
-  if (text.indexOf("on") >= 0) {
-    
+  
+  // Attempt to seperate the link querey from the text:
+  let linkQuery = text;
+  let onInd = linkQuery.indexOf("on"); 
+  if (onInd >= 0 && linkQuery[onInd - 1] == "click") {
+    linkQuery.splice(0, onInd); 
+  } else {
+    let clickInd = linkQuery.indexOf("click");
+    let selectInd = linkQuery.indexOf("select");
+    if (clickInd) {
+      linkQuery.splice(0, clinkInd);
+    } else if (selectInd) {
+      linkQuery.splice(0, selectInd);
+    }
+  } 
+  let querySet = new Set(linkQuery);
+  
+  // Get the links: 
+  const links = document.getElementsByTagName("a");
+  // Get the buttons:
+  const buttons = document.getElementsByTagName("button"); 
+  
+  // Figure out which link/button is the closest match:
+  let best = {
+    score: 0,
+    element: null
+  }
+    for (let index in links) {
+      let link = links[index];
+      let score = 0;
+      if (!link.innerHTML) continue;
+      let text = link.innerText.toLowerCase().split(" ");
+      for (let index in text) {
+        let word = text[index];
+        if (querySet.has(word)) score += 1;
+      }
+      if (score > best.score) {
+      // If every word matches just quit.
+      best = {
+        score: score,
+        element: link,
+        name: link.innerHTML
+      } 
+      if (score == querySet.size) break;
+    }
   }
 
+  best.element.click();
 }
 
 function test() {
