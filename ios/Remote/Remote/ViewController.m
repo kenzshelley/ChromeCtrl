@@ -25,24 +25,13 @@
 
 @implementation ViewController
 
+FAuthData *userAuthData = nil;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-//    // Setup UI
-//    
-//    self.responseTextView.text = nil;
-//    
-//    UIImage* image = [UIImage imageNamed:@"ic-hound-small"];
-//    
-//    UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
-//    
-//    imageView.contentMode = UIViewContentModeScaleAspectFit;
-//    
-//    imageView.frame = CGRectMake(0, 0, 32, 32);
-//    
-//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
-//        initWithCustomView:imageView];
+    userAuthData = [[Firebase alloc] initWithUrl:@"https://remote-hound.firebaseio.com/"].authData;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -159,7 +148,7 @@
                 
                 // Post the task to Firebase
                 Firebase *usersRef = [[Firebase alloc] initWithUrl:@"https://remote-hound.firebaseio.com/users"];
-                NSString* username = @"test_user";
+                NSString* username = userAuthData.uid;
                 Firebase* userRef = [usersRef childByAppendingPath:username];
                 Firebase* userTasksRef = [userRef childByAppendingPath:@"tasks"];
                 Firebase* taskRef = [userTasksRef childByAutoId];
