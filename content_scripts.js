@@ -70,7 +70,7 @@ function scroll(params) {
 }
 
 function fastForward() {
- document.getElementsByTagName("video")[0].playbackRate = 5.0;
+ document.getElementsByTagName("video")[0].playbackRate = 3.0;
 }
 
 function rewind() {
