@@ -57,10 +57,10 @@ FAuthData *userAuthData = nil;
 {
     UIDeviceBatteryState currentState = [[UIDevice currentDevice] batteryState];
     if (currentState == UIDeviceBatteryStateCharging || currentState == UIDeviceBatteryStateFull) {
-        self.responseTextView.text = @"plugInDetected";
+//        self.responseTextView.text = @"plugInDetected";
         [self turnOnHotPhraseListener];
     } else {
-        self.responseTextView.text = @"unplugDetected";
+//        self.responseTextView.text = @"unplugDetected";
         [self turnOffHotPhraseListener];
     }
 
@@ -70,7 +70,7 @@ FAuthData *userAuthData = nil;
 
 - (void)turnOnHotPhraseListener
 {
-    self.responseTextView.text = @"turn on hot";
+//    self.responseTextView.text = @"turn on hot";
     HoundVoiceSearch.instance.enableHotPhraseDetection = YES;
     [HoundVoiceSearch.instance startListeningWithCompletionHandler:^(NSError* error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -86,7 +86,7 @@ FAuthData *userAuthData = nil;
 
 - (void)turnOffHotPhraseListener
 {
-    self.responseTextView.text = @"turn off hot";
+//    self.responseTextView.text = @"turn off hot";
     HoundVoiceSearch.instance.enableHotPhraseDetection = NO;
     [HoundVoiceSearch.instance stopListeningWithCompletionHandler:^(NSError* error) {
         dispatch_async(dispatch_get_main_queue(), ^{
