@@ -100,6 +100,16 @@ const tasks = {
     ],
     "scope": "browser"
   },
+  "closeTab": {
+    "function": "closeTab",
+    "keywords": [
+      "close",
+      "tab", 
+      "remove",
+      "exit"
+    ],
+    "scope": "browser"
+  },
   "back": {
     "function": "back",
     "keywords": [ 
