@@ -147,5 +147,13 @@ function createBookmark() {
     });
 }
 
+function fullScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "fullscreen"}); })
+}
+
+function standardScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "maximize"}); })
+}
+
 
 
