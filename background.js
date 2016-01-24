@@ -125,8 +125,11 @@ function search(params) {
     let query  = params.text;
     var url = "https://www.google.com/#q=";
     for (var key in query) {
-      if (key.toLowerCase() == "search") continue;
-      url += "+" + query[key];  
+      let word = query[key];
+      if (word.toLowerCase() == "search") {
+        continue;
+      }
+      url += "+" + word;  
     }
 
     chrome.tabs.update(tab.id, {url: url});
