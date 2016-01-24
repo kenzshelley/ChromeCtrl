@@ -189,7 +189,8 @@ const tasks = {
     "function": "fullScreen",
     "keywords": [
     "fullscreen",
-    "full screen",
+    "full",
+    "screen",
     "maximize"
     ],
     "scope": "browser"
@@ -197,9 +198,11 @@ const tasks = {
   "standardScreen": {
     "function": "standardScreen",
     "keywords": [
-    "standard screen",
-    "normal screen",
-    "smaller screen",
-    "escape"]
+      "escape",
+      "normal",
+      "minimize",
+      "escape"
+    ],
+    "scope": "browser"
   }
 }
