@@ -7,86 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BD0ABD81C532D1700D61125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ABD71C532D1700D61125 /* AppDelegate.swift */; };
-		4BD0ABDA1C532D1700D61125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ABD91C532D1700D61125 /* ViewController.swift */; };
-		4BD0ABDD1C532D1700D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ABDB1C532D1700D61125 /* Main.storyboard */; };
-		4BD0ABDF1C532D1700D61125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ABDE1C532D1700D61125 /* Assets.xcassets */; };
-		4BD0ABE21C532D1700D61125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ABE01C532D1700D61125 /* LaunchScreen.storyboard */; };
-		4BD0ABED1C532D1800D61125 /* RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ABEC1C532D1800D61125 /* RemoteTests.swift */; };
-		4BD0ABF81C532D1800D61125 /* RemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ABF71C532D1800D61125 /* RemoteUITests.swift */; };
-		4BD0AC0C1C53308300D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC0B1C53308300D61125 /* AVFoundation.framework */; };
-		4BD0AC0E1C53308B00D61125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC0D1C53308B00D61125 /* AudioToolbox.framework */; };
-		4BD0AC101C53309200D61125 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC0F1C53309200D61125 /* Accelerate.framework */; };
-		4BD0AC121C5330ED00D61125 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC111C5330ED00D61125 /* libz.tbd */; };
-		4BD0AC141C5330FC00D61125 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC131C5330FC00D61125 /* libc++.tbd */; };
-		4BD0AC1B1C533AC700D61125 /* HoundSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC1A1C533AC700D61125 /* HoundSDK.xcassets */; };
-		4BD0AC1D1C533ADA00D61125 /* libHoundSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC1C1C533ADA00D61125 /* libHoundSDK.a */; };
-		4BD0AC1F1C533B1500D61125 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC1E1C533B1500D61125 /* include */; };
+		4BD0AC481C53448C00D61125 /* RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC471C53448C00D61125 /* RemoteTests.m */; };
+		4BD0AC531C53448C00D61125 /* RemoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC521C53448C00D61125 /* RemoteUITests.m */; };
+		4BD0AC681C53453C00D61125 /* HoundSDK.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC651C53453C00D61125 /* HoundSDK.xcassets */; };
+		4BD0AC691C53453C00D61125 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC661C53453C00D61125 /* include */; };
+		4BD0AC6A1C53453C00D61125 /* libHoundSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC671C53453C00D61125 /* libHoundSDK.a */; };
+		4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7D1C53818600D61125 /* AppDelegate.m */; };
+		4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7E1C53818600D61125 /* AppImages.xcassets */; };
+		4BD0AC891C53818600D61125 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC7F1C53818600D61125 /* Base.lproj */; };
+		4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0AC801C53818600D61125 /* Images.xcassets */; };
+		4BD0AC8C1C53818600D61125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC821C53818600D61125 /* main.m */; };
+		4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC841C53818600D61125 /* NavigationController.m */; };
+		4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */; };
+		4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC911C5381C400D61125 /* AudioToolbox.framework */; };
+		4BD0AC941C5381CA00D61125 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC931C5381CA00D61125 /* Accelerate.framework */; };
+		4BD0AC961C5381D200D61125 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC951C5381D200D61125 /* libc++.tbd */; };
+		4BD0AC981C5381D700D61125 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC971C5381D700D61125 /* libz.tbd */; };
+		4BD0AC9C1C53820E00D61125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC9B1C53820E00D61125 /* UIKit.framework */; };
+		4BD0AC9E1C53821800D61125 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD0AC9D1C53821800D61125 /* Foundation.framework */; };
+		4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA01C53825700D61125 /* LaunchScreen.xib */; };
+		4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA21C53826A00D61125 /* Main.storyboard */; };
+		4BD0ACA61C5390B300D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC861C53818600D61125 /* ViewController.m */; };
+		4BD0ACA91C542AB600D61125 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA81C542AB600D61125 /* LoginViewController.m */; };
+		F690A71E12751F3BEFE985FD /* libPods-Remote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4BD0ABE91C532D1800D61125 /* PBXContainerItemProxy */ = {
+		4BD0AC441C53448C00D61125 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4BD0ABCC1C532D1700D61125 /* Project object */;
+			containerPortal = 4BD0AC221C53448C00D61125 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4BD0ABD31C532D1700D61125;
+			remoteGlobalIDString = 4BD0AC291C53448C00D61125;
 			remoteInfo = Remote;
 		};
-		4BD0ABF41C532D1800D61125 /* PBXContainerItemProxy */ = {
+		4BD0AC4F1C53448C00D61125 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4BD0ABCC1C532D1700D61125 /* Project object */;
+			containerPortal = 4BD0AC221C53448C00D61125 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4BD0ABD31C532D1700D61125;
+			remoteGlobalIDString = 4BD0AC291C53448C00D61125;
 			remoteInfo = Remote;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BD0ABD41C532D1700D61125 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD0ABD71C532D1700D61125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BD0ABD91C532D1700D61125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BD0ABDC1C532D1700D61125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4BD0ABDE1C532D1700D61125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4BD0ABE11C532D1700D61125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4BD0ABE31C532D1700D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD0ABE81C532D1800D61125 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD0ABEC1C532D1800D61125 /* RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTests.swift; sourceTree = "<group>"; };
-		4BD0ABEE1C532D1800D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD0ABF31C532D1800D61125 /* RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BD0ABF71C532D1800D61125 /* RemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUITests.swift; sourceTree = "<group>"; };
-		4BD0ABF91C532D1800D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BD0AC0B1C53308300D61125 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4BD0AC0D1C53308B00D61125 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		4BD0AC0F1C53309200D61125 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		4BD0AC111C5330ED00D61125 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		4BD0AC131C5330FC00D61125 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		4BD0AC1A1C533AC700D61125 /* HoundSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HoundSDK.xcassets; sourceTree = "<group>"; };
-		4BD0AC1C1C533ADA00D61125 /* libHoundSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHoundSDK.a; sourceTree = "<group>"; };
-		4BD0AC1E1C533B1500D61125 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
+		4BD0AC2A1C53448C00D61125 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD0AC431C53448C00D61125 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD0AC471C53448C00D61125 /* RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTests.m; sourceTree = "<group>"; };
+		4BD0AC491C53448C00D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD0AC4E1C53448C00D61125 /* RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD0AC521C53448C00D61125 /* RemoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteUITests.m; sourceTree = "<group>"; };
+		4BD0AC541C53448C00D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD0AC651C53453C00D61125 /* HoundSDK.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HoundSDK.xcassets; sourceTree = "<group>"; };
+		4BD0AC661C53453C00D61125 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		4BD0AC671C53453C00D61125 /* libHoundSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHoundSDK.a; sourceTree = "<group>"; };
+		4BD0AC7C1C53818600D61125 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4BD0AC7D1C53818600D61125 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4BD0AC7E1C53818600D61125 /* AppImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppImages.xcassets; sourceTree = "<group>"; };
+		4BD0AC7F1C53818600D61125 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		4BD0AC801C53818600D61125 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4BD0AC811C53818600D61125 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BD0AC821C53818600D61125 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4BD0AC831C53818600D61125 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		4BD0AC841C53818600D61125 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		4BD0AC851C53818600D61125 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4BD0AC861C53818600D61125 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BD0AC911C5381C400D61125 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4BD0AC931C5381CA00D61125 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		4BD0AC951C5381D200D61125 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4BD0AC971C5381D700D61125 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4BD0AC9B1C53820E00D61125 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BD0AC9D1C53821800D61125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4BD0ACA01C53825700D61125 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4BD0ACA21C53826A00D61125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BD0ACA71C542A9E00D61125 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4BD0ACA81C542AB600D61125 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4BD0ABD11C532D1700D61125 /* Frameworks */ = {
+		4BD0AC271C53448C00D61125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0AC141C5330FC00D61125 /* libc++.tbd in Frameworks */,
-				4BD0AC121C5330ED00D61125 /* libz.tbd in Frameworks */,
-				4BD0AC101C53309200D61125 /* Accelerate.framework in Frameworks */,
-				4BD0AC1D1C533ADA00D61125 /* libHoundSDK.a in Frameworks */,
-				4BD0AC0E1C53308B00D61125 /* AudioToolbox.framework in Frameworks */,
-				4BD0AC0C1C53308300D61125 /* AVFoundation.framework in Frameworks */,
+				4BD0AC9E1C53821800D61125 /* Foundation.framework in Frameworks */,
+				4BD0AC9C1C53820E00D61125 /* UIKit.framework in Frameworks */,
+				4BD0AC981C5381D700D61125 /* libz.tbd in Frameworks */,
+				4BD0AC961C5381D200D61125 /* libc++.tbd in Frameworks */,
+				4BD0AC941C5381CA00D61125 /* Accelerate.framework in Frameworks */,
+				4BD0AC921C5381C400D61125 /* AudioToolbox.framework in Frameworks */,
+				4BD0AC901C5381C100D61125 /* AVFoundation.framework in Frameworks */,
+				4BD0AC6A1C53453C00D61125 /* libHoundSDK.a in Frameworks */,
+				F690A71E12751F3BEFE985FD /* libPods-Remote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABE51C532D1800D61125 /* Frameworks */ = {
+		4BD0AC401C53448C00D61125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABF01C532D1800D61125 /* Frameworks */ = {
+		4BD0AC4B1C53448C00D61125 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,116 +121,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BD0ABCB1C532D1700D61125 = {
+		4BD0AC211C53448C00D61125 = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABD61C532D1700D61125 /* Remote */,
-				4BD0AC191C533A9900D61125 /* HoundSDK */,
-				4BD0ABD51C532D1700D61125 /* Products */,
-				4BD0ABEB1C532D1800D61125 /* RemoteTests */,
-				4BD0ABF61C532D1800D61125 /* RemoteUITests */,
+				4BD0AC2C1C53448C00D61125 /* Remote */,
+				4BD0AC641C53451700D61125 /* HoundSDK */,
+				4BD0AC2B1C53448C00D61125 /* Products */,
+				4BD0AC461C53448C00D61125 /* RemoteTests */,
+				4BD0AC511C53448C00D61125 /* RemoteUITests */,
+				B66DBB0D43700DBE00108AC4 /* Pods */,
+				9DA58C25EE75B01AA686AA20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		4BD0ABD51C532D1700D61125 /* Products */ = {
+		4BD0AC2B1C53448C00D61125 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABD41C532D1700D61125 /* Remote.app */,
-				4BD0ABE81C532D1800D61125 /* RemoteTests.xctest */,
-				4BD0ABF31C532D1800D61125 /* RemoteUITests.xctest */,
+				4BD0AC2A1C53448C00D61125 /* Remote.app */,
+				4BD0AC431C53448C00D61125 /* RemoteTests.xctest */,
+				4BD0AC4E1C53448C00D61125 /* RemoteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BD0ABD61C532D1700D61125 /* Remote */ = {
+		4BD0AC2C1C53448C00D61125 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABD71C532D1700D61125 /* AppDelegate.swift */,
-				4BD0ABDB1C532D1700D61125 /* Main.storyboard */,
-				4BD0AC161C53319000D61125 /* View Controllers */,
-				4BD0AC171C5331A100D61125 /* Resources */,
-				4BD0AC181C5331AF00D61125 /* Supporting Files */,
-				4BD0AC151C53315F00D61125 /* Frameworks */,
-				4BD0ABDE1C532D1700D61125 /* Assets.xcassets */,
+				4BD0AC7C1C53818600D61125 /* AppDelegate.h */,
+				4BD0AC7D1C53818600D61125 /* AppDelegate.m */,
+				4BD0ACA21C53826A00D61125 /* Main.storyboard */,
+				4BD0AC9F1C53822900D61125 /* View Controllers */,
+				4BD0AC991C5381E300D61125 /* Resources */,
+				4BD0ACA41C53827300D61125 /* Supporting Files */,
+				4BD0AC9A1C5381FE00D61125 /* Frameworks */,
+				4BD0AC7F1C53818600D61125 /* Base.lproj */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
 		};
-		4BD0ABEB1C532D1800D61125 /* RemoteTests */ = {
+		4BD0AC461C53448C00D61125 /* RemoteTests */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABEC1C532D1800D61125 /* RemoteTests.swift */,
-				4BD0ABEE1C532D1800D61125 /* Info.plist */,
+				4BD0AC471C53448C00D61125 /* RemoteTests.m */,
+				4BD0AC491C53448C00D61125 /* Info.plist */,
 			);
 			path = RemoteTests;
 			sourceTree = "<group>";
 		};
-		4BD0ABF61C532D1800D61125 /* RemoteUITests */ = {
+		4BD0AC511C53448C00D61125 /* RemoteUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABF71C532D1800D61125 /* RemoteUITests.swift */,
-				4BD0ABF91C532D1800D61125 /* Info.plist */,
+				4BD0AC521C53448C00D61125 /* RemoteUITests.m */,
+				4BD0AC541C53448C00D61125 /* Info.plist */,
 			);
 			path = RemoteUITests;
 			sourceTree = "<group>";
 		};
-		4BD0AC151C53315F00D61125 /* Frameworks */ = {
+		4BD0AC641C53451700D61125 /* HoundSDK */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0AC111C5330ED00D61125 /* libz.tbd */,
-				4BD0AC131C5330FC00D61125 /* libc++.tbd */,
-				4BD0AC0F1C53309200D61125 /* Accelerate.framework */,
-				4BD0AC0B1C53308300D61125 /* AVFoundation.framework */,
-				4BD0AC0D1C53308B00D61125 /* AudioToolbox.framework */,
+				4BD0AC651C53453C00D61125 /* HoundSDK.xcassets */,
+				4BD0AC661C53453C00D61125 /* include */,
+				4BD0AC671C53453C00D61125 /* libHoundSDK.a */,
 			);
-			name = Frameworks;
+			name = HoundSDK;
 			sourceTree = "<group>";
 		};
-		4BD0AC161C53319000D61125 /* View Controllers */ = {
+		4BD0AC991C5381E300D61125 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABD91C532D1700D61125 /* ViewController.swift */,
-			);
-			name = "View Controllers";
-			sourceTree = "<group>";
-		};
-		4BD0AC171C5331A100D61125 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4BD0ABE01C532D1700D61125 /* LaunchScreen.storyboard */,
+				4BD0AC7E1C53818600D61125 /* AppImages.xcassets */,
+				4BD0AC801C53818600D61125 /* Images.xcassets */,
+				4BD0ACA01C53825700D61125 /* LaunchScreen.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		4BD0AC181C5331AF00D61125 /* Supporting Files */ = {
+		4BD0AC9A1C5381FE00D61125 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0ABE31C532D1700D61125 /* Info.plist */,
+				4BD0AC9D1C53821800D61125 /* Foundation.framework */,
+				4BD0AC9B1C53820E00D61125 /* UIKit.framework */,
+				4BD0AC971C5381D700D61125 /* libz.tbd */,
+				4BD0AC951C5381D200D61125 /* libc++.tbd */,
+				4BD0AC931C5381CA00D61125 /* Accelerate.framework */,
+				4BD0AC911C5381C400D61125 /* AudioToolbox.framework */,
+				4BD0AC8F1C5381C100D61125 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BD0AC9F1C53822900D61125 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0AC831C53818600D61125 /* NavigationController.h */,
+				4BD0AC841C53818600D61125 /* NavigationController.m */,
+				4BD0AC851C53818600D61125 /* ViewController.h */,
+				4BD0AC861C53818600D61125 /* ViewController.m */,
+				4BD0ACA71C542A9E00D61125 /* LoginViewController.h */,
+				4BD0ACA81C542AB600D61125 /* LoginViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4BD0ACA41C53827300D61125 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BD0AC811C53818600D61125 /* Info.plist */,
+				4BD0AC821C53818600D61125 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4BD0AC191C533A9900D61125 /* HoundSDK */ = {
+		9DA58C25EE75B01AA686AA20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0AC1E1C533B1500D61125 /* include */,
-				4BD0AC1C1C533ADA00D61125 /* libHoundSDK.a */,
-				4BD0AC1A1C533AC700D61125 /* HoundSDK.xcassets */,
+				7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */,
 			);
-			name = HoundSDK;
-			path = Remote;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66DBB0D43700DBE00108AC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */,
+				1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BD0ABD31C532D1700D61125 /* Remote */ = {
+		4BD0AC291C53448C00D61125 /* Remote */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD0ABFC1C532D1800D61125 /* Build configuration list for PBXNativeTarget "Remote" */;
+			buildConfigurationList = 4BD0AC571C53448C00D61125 /* Build configuration list for PBXNativeTarget "Remote" */;
 			buildPhases = (
-				4BD0ABD01C532D1700D61125 /* Sources */,
-				4BD0ABD11C532D1700D61125 /* Frameworks */,
-				4BD0ABD21C532D1700D61125 /* Resources */,
+				B49272C6A16ED8AAF7EC0F24 /* Check Pods Manifest.lock */,
+				4BD0AC261C53448C00D61125 /* Sources */,
+				4BD0AC271C53448C00D61125 /* Frameworks */,
+				4BD0AC281C53448C00D61125 /* Resources */,
+				E5FC1CBB18A766DEDDD23012 /* Embed Pods Frameworks */,
+				536E2E0B4A438DC9F48897F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,72 +270,71 @@
 			);
 			name = Remote;
 			productName = Remote;
-			productReference = 4BD0ABD41C532D1700D61125 /* Remote.app */;
+			productReference = 4BD0AC2A1C53448C00D61125 /* Remote.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4BD0ABE71C532D1800D61125 /* RemoteTests */ = {
+		4BD0AC421C53448C00D61125 /* RemoteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD0ABFF1C532D1800D61125 /* Build configuration list for PBXNativeTarget "RemoteTests" */;
+			buildConfigurationList = 4BD0AC5A1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteTests" */;
 			buildPhases = (
-				4BD0ABE41C532D1800D61125 /* Sources */,
-				4BD0ABE51C532D1800D61125 /* Frameworks */,
-				4BD0ABE61C532D1800D61125 /* Resources */,
+				4BD0AC3F1C53448C00D61125 /* Sources */,
+				4BD0AC401C53448C00D61125 /* Frameworks */,
+				4BD0AC411C53448C00D61125 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4BD0ABEA1C532D1800D61125 /* PBXTargetDependency */,
+				4BD0AC451C53448C00D61125 /* PBXTargetDependency */,
 			);
 			name = RemoteTests;
 			productName = RemoteTests;
-			productReference = 4BD0ABE81C532D1800D61125 /* RemoteTests.xctest */;
+			productReference = 4BD0AC431C53448C00D61125 /* RemoteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4BD0ABF21C532D1800D61125 /* RemoteUITests */ = {
+		4BD0AC4D1C53448C00D61125 /* RemoteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BD0AC021C532D1800D61125 /* Build configuration list for PBXNativeTarget "RemoteUITests" */;
+			buildConfigurationList = 4BD0AC5D1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteUITests" */;
 			buildPhases = (
-				4BD0ABEF1C532D1800D61125 /* Sources */,
-				4BD0ABF01C532D1800D61125 /* Frameworks */,
-				4BD0ABF11C532D1800D61125 /* Resources */,
+				4BD0AC4A1C53448C00D61125 /* Sources */,
+				4BD0AC4B1C53448C00D61125 /* Frameworks */,
+				4BD0AC4C1C53448C00D61125 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4BD0ABF51C532D1800D61125 /* PBXTargetDependency */,
+				4BD0AC501C53448C00D61125 /* PBXTargetDependency */,
 			);
 			name = RemoteUITests;
 			productName = RemoteUITests;
-			productReference = 4BD0ABF31C532D1800D61125 /* RemoteUITests.xctest */;
+			productReference = 4BD0AC4E1C53448C00D61125 /* RemoteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4BD0ABCC1C532D1700D61125 /* Project object */ = {
+		4BD0AC221C53448C00D61125 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jamie Sookprasong";
 				TargetAttributes = {
-					4BD0ABD31C532D1700D61125 = {
+					4BD0AC291C53448C00D61125 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 9QYY2XXHZ5;
 					};
-					4BD0ABE71C532D1800D61125 = {
+					4BD0AC421C53448C00D61125 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 9QYY2XXHZ5;
-						TestTargetID = 4BD0ABD31C532D1700D61125;
+						TestTargetID = 4BD0AC291C53448C00D61125;
 					};
-					4BD0ABF21C532D1800D61125 = {
+					4BD0AC4D1C53448C00D61125 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 9QYY2XXHZ5;
-						TestTargetID = 4BD0ABD31C532D1700D61125;
+						TestTargetID = 4BD0AC291C53448C00D61125;
 					};
 				};
 			};
-			buildConfigurationList = 4BD0ABCF1C532D1700D61125 /* Build configuration list for PBXProject "Remote" */;
+			buildConfigurationList = 4BD0AC251C53448C00D61125 /* Build configuration list for PBXProject "Remote" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -286,39 +342,41 @@
 				en,
 				Base,
 			);
-			mainGroup = 4BD0ABCB1C532D1700D61125;
-			productRefGroup = 4BD0ABD51C532D1700D61125 /* Products */;
+			mainGroup = 4BD0AC211C53448C00D61125;
+			productRefGroup = 4BD0AC2B1C53448C00D61125 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BD0ABD31C532D1700D61125 /* Remote */,
-				4BD0ABE71C532D1800D61125 /* RemoteTests */,
-				4BD0ABF21C532D1800D61125 /* RemoteUITests */,
+				4BD0AC291C53448C00D61125 /* Remote */,
+				4BD0AC421C53448C00D61125 /* RemoteTests */,
+				4BD0AC4D1C53448C00D61125 /* RemoteUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4BD0ABD21C532D1700D61125 /* Resources */ = {
+		4BD0AC281C53448C00D61125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0AC1B1C533AC700D61125 /* HoundSDK.xcassets in Resources */,
-				4BD0ABE21C532D1700D61125 /* LaunchScreen.storyboard in Resources */,
-				4BD0AC1F1C533B1500D61125 /* include in Resources */,
-				4BD0ABDF1C532D1700D61125 /* Assets.xcassets in Resources */,
-				4BD0ABDD1C532D1700D61125 /* Main.storyboard in Resources */,
+				4BD0AC681C53453C00D61125 /* HoundSDK.xcassets in Resources */,
+				4BD0AC8A1C53818600D61125 /* Images.xcassets in Resources */,
+				4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */,
+				4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */,
+				4BD0AC881C53818600D61125 /* AppImages.xcassets in Resources */,
+				4BD0AC891C53818600D61125 /* Base.lproj in Resources */,
+				4BD0AC691C53453C00D61125 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABE61C532D1800D61125 /* Resources */ = {
+		4BD0AC411C53448C00D61125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABF11C532D1800D61125 /* Resources */ = {
+		4BD0AC4C1C53448C00D61125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,68 +385,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		536E2E0B4A438DC9F48897F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49272C6A16ED8AAF7EC0F24 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FC1CBB18A766DEDDD23012 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote/Pods-Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4BD0ABD01C532D1700D61125 /* Sources */ = {
+		4BD0AC261C53448C00D61125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0ABDA1C532D1700D61125 /* ViewController.swift in Sources */,
-				4BD0ABD81C532D1700D61125 /* AppDelegate.swift in Sources */,
+				4BD0ACA61C5390B300D61125 /* ViewController.m in Sources */,
+				4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */,
+				4BD0AC8C1C53818600D61125 /* main.m in Sources */,
+				4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */,
+				4BD0ACA91C542AB600D61125 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABE41C532D1800D61125 /* Sources */ = {
+		4BD0AC3F1C53448C00D61125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0ABED1C532D1800D61125 /* RemoteTests.swift in Sources */,
+				4BD0AC481C53448C00D61125 /* RemoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD0ABEF1C532D1800D61125 /* Sources */ = {
+		4BD0AC4A1C53448C00D61125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BD0ABF81C532D1800D61125 /* RemoteUITests.swift in Sources */,
+				4BD0AC531C53448C00D61125 /* RemoteUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4BD0ABEA1C532D1800D61125 /* PBXTargetDependency */ = {
+		4BD0AC451C53448C00D61125 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BD0ABD31C532D1700D61125 /* Remote */;
-			targetProxy = 4BD0ABE91C532D1800D61125 /* PBXContainerItemProxy */;
+			target = 4BD0AC291C53448C00D61125 /* Remote */;
+			targetProxy = 4BD0AC441C53448C00D61125 /* PBXContainerItemProxy */;
 		};
-		4BD0ABF51C532D1800D61125 /* PBXTargetDependency */ = {
+		4BD0AC501C53448C00D61125 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4BD0ABD31C532D1700D61125 /* Remote */;
-			targetProxy = 4BD0ABF41C532D1800D61125 /* PBXContainerItemProxy */;
+			target = 4BD0AC291C53448C00D61125 /* Remote */;
+			targetProxy = 4BD0AC4F1C53448C00D61125 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		4BD0ABDB1C532D1700D61125 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BD0ABDC1C532D1700D61125 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4BD0ABE01C532D1700D61125 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BD0ABE11C532D1700D61125 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		4BD0ABFA1C532D1800D61125 /* Debug */ = {
+		4BD0AC551C53448C00D61125 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -424,15 +514,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Remote;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		4BD0ABFB1C532D1800D61125 /* Release */ = {
+		4BD0AC561C53448C00D61125 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -462,52 +552,51 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Remote;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		4BD0ABFD1C532D1800D61125 /* Debug */ = {
+		4BD0AC581C53448C00D61125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEFINES_MODULE = YES;
-				HEADER_SEARCH_PATHS = /Users/jamiesookprasong/Documents/Hackathons/remote/ios/Remote/HoundSDK/include;
+				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
+					HoundSDK/,
 					"$(inherited)",
-					"$(PROJECT_DIR)/HoundSDK",
-					"$(PROJECT_DIR)/Remote",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		4BD0ABFE1C532D1800D61125 /* Release */ = {
+		4BD0AC591C53448C00D61125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEFINES_MODULE = YES;
-				HEADER_SEARCH_PATHS = /Users/jamiesookprasong/Documents/Hackathons/remote/ios/Remote/HoundSDK/include;
+				HEADER_SEARCH_PATHS = HoundSDK/include/;
 				INFOPLIST_FILE = Remote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
+					HoundSDK/,
 					"$(inherited)",
-					"$(PROJECT_DIR)/HoundSDK",
-					"$(PROJECT_DIR)/Remote",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		4BD0AC001C532D1800D61125 /* Debug */ = {
+		4BD0AC5B1C53448C00D61125 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,7 +608,7 @@
 			};
 			name = Debug;
 		};
-		4BD0AC011C532D1800D61125 /* Release */ = {
+		4BD0AC5C1C53448C00D61125 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,7 +620,7 @@
 			};
 			name = Release;
 		};
-		4BD0AC031C532D1800D61125 /* Debug */ = {
+		4BD0AC5E1C53448C00D61125 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = RemoteUITests/Info.plist;
@@ -543,7 +632,7 @@
 			};
 			name = Debug;
 		};
-		4BD0AC041C532D1800D61125 /* Release */ = {
+		4BD0AC5F1C53448C00D61125 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = RemoteUITests/Info.plist;
@@ -558,40 +647,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BD0ABCF1C532D1700D61125 /* Build configuration list for PBXProject "Remote" */ = {
+		4BD0AC251C53448C00D61125 /* Build configuration list for PBXProject "Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD0ABFA1C532D1800D61125 /* Debug */,
-				4BD0ABFB1C532D1800D61125 /* Release */,
+				4BD0AC551C53448C00D61125 /* Debug */,
+				4BD0AC561C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BD0ABFC1C532D1800D61125 /* Build configuration list for PBXNativeTarget "Remote" */ = {
+		4BD0AC571C53448C00D61125 /* Build configuration list for PBXNativeTarget "Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD0ABFD1C532D1800D61125 /* Debug */,
-				4BD0ABFE1C532D1800D61125 /* Release */,
+				4BD0AC581C53448C00D61125 /* Debug */,
+				4BD0AC591C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4BD0ABFF1C532D1800D61125 /* Build configuration list for PBXNativeTarget "RemoteTests" */ = {
+		4BD0AC5A1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD0AC001C532D1800D61125 /* Debug */,
-				4BD0AC011C532D1800D61125 /* Release */,
+				4BD0AC5B1C53448C00D61125 /* Debug */,
+				4BD0AC5C1C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		4BD0AC021C532D1800D61125 /* Build configuration list for PBXNativeTarget "RemoteUITests" */ = {
+		4BD0AC5D1C53448C00D61125 /* Build configuration list for PBXNativeTarget "RemoteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD0AC031C532D1800D61125 /* Debug */,
-				4BD0AC041C532D1800D61125 /* Release */,
+				4BD0AC5E1C53448C00D61125 /* Debug */,
+				4BD0AC5F1C53448C00D61125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4BD0ABCC1C532D1700D61125 /* Project object */;
+	rootObject = 4BD0AC221C53448C00D61125 /* Project object */;
 }

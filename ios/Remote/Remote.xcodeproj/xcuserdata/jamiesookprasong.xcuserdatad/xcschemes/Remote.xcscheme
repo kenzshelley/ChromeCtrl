@@ -14,9 +14,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+               BlueprintIdentifier = "4BD0AC291C53448C00D61125"
                BuildableName = "Remote.app"
                BlueprintName = "Remote"
+               ReferencedContainer = "container:Remote.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BD0AC421C53448C00D61125"
+               BuildableName = "RemoteTests.xctest"
+               BlueprintName = "RemoteTests"
+               ReferencedContainer = "container:Remote.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BD0AC4D1C53448C00D61125"
+               BuildableName = "RemoteUITests.xctest"
+               BlueprintName = "RemoteUITests"
                ReferencedContainer = "container:Remote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,31 +56,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABE71C532D1800D61125"
-               BuildableName = "RemoteTests.xctest"
-               BlueprintName = "RemoteTests"
-               ReferencedContainer = "container:Remote.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BD0ABF21C532D1800D61125"
-               BuildableName = "RemoteUITests.xctest"
-               BlueprintName = "RemoteUITests"
-               ReferencedContainer = "container:Remote.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
@@ -75,7 +83,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
@@ -94,7 +102,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BD0ABD31C532D1700D61125"
+            BlueprintIdentifier = "4BD0AC291C53448C00D61125"
             BuildableName = "Remote.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
