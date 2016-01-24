@@ -30,6 +30,15 @@ const tasks = {
       "page"
     ],
     "scope": "browser"
+  },
+  "previousTab": {
+    "function": "previousTab",
+    "keywords": [
+      "previous", 
+      "tab", 
+      "page"
+    ],
+    "scope": "browser"
   }, 
   "scroll": {
     "function": "scroll", 
