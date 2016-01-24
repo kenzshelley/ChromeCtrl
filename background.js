@@ -125,7 +125,7 @@ function search(params) {
     let query  = params.text;
     var url = "https://www.google.com/#q=";
     for (var key in query) {
-      if (key == "search") continue;
+      if (key.toLowerCase() == "search") continue;
       url += "+" + query[key];  
     }
 
@@ -142,6 +142,14 @@ function createBookmark() {
         console.log("adding bookmark!");
       });
     });
+}
+
+function fullScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "fullscreen"}); })
+}
+
+function standardScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "maximize"}); })
 }
 
 
