@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Chrome Control-->
+        <!--ChromeCtrl-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <constraint firstItem="Upj-bZ-yph" firstAttribute="top" secondItem="AxG-Em-Agv" secondAttribute="bottom" constant="440" id="uxA-Kz-Iei"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chrome Control" id="G6S-uN-gjI">
+                    <navigationItem key="navigationItem" title="ChromeCtrl" id="G6S-uN-gjI">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="nP4-27-NRz">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pnr-xZ-qPu">
                                 <rect key="frame" x="16" y="7" width="71" height="30"/>
@@ -89,12 +89,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Chrome Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Jo-DXo">
-                                <rect key="frame" x="22" y="93" width="276" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-jl-M6v">
                                 <rect key="frame" x="20" y="345" width="280" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,15 +99,21 @@
                                     <action selector="loginAction:" destination="Qy6-Mo-Qmc" eventType="touchUpInside" id="el3-UT-rTy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChromeCtrl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-PM-ffH">
+                                <rect key="frame" x="69" y="92" width="183" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1450980392" green="0.28235294119999998" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="MKN-Rv-93Y" firstAttribute="leading" secondItem="IS4-X0-N1c" secondAttribute="leadingMargin" constant="4" id="3VY-MN-Emz"/>
                             <constraint firstItem="gA0-fn-OlU" firstAttribute="trailing" secondItem="3Ge-jl-M6v" secondAttribute="trailing" id="Cj5-ed-bP2"/>
-                            <constraint firstItem="aaw-Jo-DXo" firstAttribute="centerX" secondItem="MKN-Rv-93Y" secondAttribute="centerX" id="CuG-GW-Fuy"/>
                             <constraint firstItem="gA0-fn-OlU" firstAttribute="top" secondItem="MKN-Rv-93Y" secondAttribute="bottom" constant="13" id="F1N-Df-sBQ"/>
-                            <constraint firstItem="aaw-Jo-DXo" firstAttribute="top" secondItem="x5a-GG-ETx" secondAttribute="bottom" constant="73" id="Jex-Ey-h5V"/>
                             <constraint firstItem="gA0-fn-OlU" firstAttribute="centerY" secondItem="IS4-X0-N1c" secondAttribute="centerY" id="MjW-RR-QpS"/>
+                            <constraint firstItem="JGb-PM-ffH" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="UN9-ca-nPC"/>
+                            <constraint firstItem="JGb-PM-ffH" firstAttribute="top" secondItem="x5a-GG-ETx" secondAttribute="bottom" constant="72" id="cda-kl-TUJ"/>
                             <constraint firstItem="MKN-Rv-93Y" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="cp9-RG-hS3"/>
                             <constraint firstItem="3Ge-jl-M6v" firstAttribute="top" secondItem="gA0-fn-OlU" secondAttribute="bottom" constant="46" id="hGd-WM-fjb"/>
                             <constraint firstItem="gA0-fn-OlU" firstAttribute="leading" secondItem="3Ge-jl-M6v" secondAttribute="leading" id="x8I-C9-WUD"/>
