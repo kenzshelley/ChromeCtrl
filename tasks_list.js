@@ -204,5 +204,15 @@ const tasks = {
       "escape"
     ],
     "scope": "browser"
+  },
+  "goto": {
+    "function": "goto",
+    "keywords": [
+      "go",
+      "to",
+      "goto"
+    ],
+    "scope": "content",
+    "sendText": true
   }
 }

@@ -149,6 +149,27 @@ function click(params) {
   best.element.click();
 }
 
+function goto(params) {
+  console.log("goto");
+  let query = params.text;
+  // Get rid of everything before and up to 'go to'
+  query.splice(0, query.indexOf("go") + 1);
+
+  let keyword = ""
+  for (let key in query) {
+    let word = query[key];
+    // if we match a keyword, use it.
+    if (pages[word]) { 
+      keyword = word;
+      break;
+    }
+  }
+  
+  if (keyword === "") return;
+
+  window.location.href = pages[keyword];
+}
+
 function test() {
   console.log("in test!");
 }
