@@ -118,6 +118,7 @@ function closeTab() {
       chrome.tabs.remove(tabId);
     }
   })
+}
 
 function search(params) {
   chrome.tabs.create({}, function (tab) {
