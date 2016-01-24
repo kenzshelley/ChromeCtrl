@@ -30,7 +30,7 @@ function getTaskName(wordList) {
         } 
       }
       bestTask = {
-        "name": taskName, 
+        "name": taskData.function, 
         "score": score,
         "data": taskData,
         "params": params

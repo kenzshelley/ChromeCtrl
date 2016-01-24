@@ -3,6 +3,7 @@
 var s = document.createElement("script");
 
 const ref = new Firebase('https://remote-hound.firebaseio.com/')
+ref.unauth();
 
 chrome.extension.onConnect.addListener(function(port) {
   console.log("Connected .....");
@@ -29,6 +30,7 @@ chrome.extension.onConnect.addListener(function(port) {
           return;
         }
 
+        console.log("grabbed a task!");
         console.log(task);
 
         if (task.data.scope === "content") {
@@ -75,6 +77,7 @@ function nextTab() {
 }
 
 function newTab() {
+  console.log("new tab");
     chrome.tabs.create({}, function (tab) {
       console.log(tab);
       console.log("is tab open?")
@@ -82,26 +85,15 @@ function newTab() {
     });
 }
 
-
-//newTab();
-
 function createBookmark() {
      var url = "";
       chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         url = tabs[0].url;
-        console.log("test");
-      });
-
-      chrome.bookmarks.create({'title': url,
-                                'url': url
-                             },
-                             function(newFolder) {
-        console.log("added folder: " + newFolder.title);
-                             });
-      console.log("Is anything happening?");
+        console.log(url);
+        chrome.bookmarks.create({'title': url, 'url': url}, function(newFolder) {
+          console.log("adding bookmark!");
+        });
 }
-
-createBookmark();
 
 
 

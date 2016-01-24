@@ -16,7 +16,7 @@ const tasks = {
     "scope": "content"
   },
   "nextTab": {
-    "function": "pause",
+    "function": "nextTab",
     "keywords": [
       "next", 
       "tab", 
@@ -89,7 +89,7 @@ const tasks = {
       "tab", 
       "create"
     ],
-    "scope": "background"
+    "scope": "browser"
   },
   "back": {
     "function": "back",
@@ -114,6 +114,6 @@ const tasks = {
       "favorite",
       "save"
     ],
-    "scope": "background"
+    "scope": "browser"
   }
 }
