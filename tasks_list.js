@@ -107,6 +107,15 @@ const tasks = {
     "scope": "content",
     "sendText": "true"
   },
+  "search": {
+    "function": "search",
+    "keywords": [
+      "search",
+      "find",
+    ],
+    "scope": "content",
+    "sendText": "true"
+  },
   "bookmark": {
     "function": "createBookmark",
     "keywords": [

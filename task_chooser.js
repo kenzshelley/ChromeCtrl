@@ -37,7 +37,7 @@ function getTaskName(wordList) {
       }
       // Check if plaintext should be sent
       if (taskData.sendText) {
-        bestTask.text = wordList; 
+        bestTask.params.text = wordList; 
       }
     }
   } 

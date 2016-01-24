@@ -85,13 +85,14 @@ function newTab() {
 }
 
 function createBookmark() {
-     var url = "";
-      chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-        url = tabs[0].url;
-        console.log(url);
-        chrome.bookmarks.create({'title': url, 'url': url}, function(newFolder) {
-          console.log("adding bookmark!");
-        });
+   var url = "";
+    chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+      url = tabs[0].url;
+      console.log(url);
+      chrome.bookmarks.create({'title': url, 'url': url}, function(newFolder) {
+        console.log("adding bookmark!");
+      });
+    });
 }
 
 
