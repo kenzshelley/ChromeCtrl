@@ -13,7 +13,7 @@
 #import <HoundSDK/HoundSDK.h>
 #import <Firebase/Firebase.h>
 
-#define VOICE_SEARCH_END_POINT       @"https://api.houndify.com/v1/audio"
+#define VOICE_SEARCH_END_POINT @"https://api.houndify.com/v1/audio"
 
 #pragma mark - ViewController
 
@@ -29,20 +29,20 @@
 {
     [super viewDidLoad];
     
-    // Setup UI
-    
-    self.responseTextView.text = nil;
-    
-    UIImage* image = [UIImage imageNamed:@"ic-hound-small"];
-    
-    UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
-    
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    imageView.frame = CGRectMake(0, 0, 32, 32);
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
-        initWithCustomView:imageView];
+//    // Setup UI
+//    
+//    self.responseTextView.text = nil;
+//    
+//    UIImage* image = [UIImage imageNamed:@"ic-hound-small"];
+//    
+//    UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
+//    
+//    imageView.contentMode = UIViewContentModeScaleAspectFit;
+//    
+//    imageView.frame = CGRectMake(0, 0, 32, 32);
+//    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]
+//        initWithCustomView:imageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -175,6 +175,13 @@
 - (void)dismissSearch
 {
     [Houndify.instance dismissListeningViewControllerAnimated:YES completionHandler:^{}];
+}
+
+- (IBAction)logoutAction:(UIButton *)sender {
+    NSLog(@"logout");
+    Firebase *ref = [[Firebase alloc] initWithUrl:@"https://remote-hound.firebaseio.com"];
+    [ref unauth];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

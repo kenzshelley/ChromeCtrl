@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="mwa-dD-Ta2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qy6-Mo-Qmc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Houndify Remote-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AxG-Em-Agv"/>
+                        <viewControllerLayoutGuide type="bottom" id="5g0-yr-rmG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="Ryt-el-ydy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryt-el-ydy">
                                 <rect key="frame" x="16" y="53" width="288" height="435"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="contentInset" minX="-4" minY="-4" maxX="-4" maxY="-4"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Upj-bZ-yph">
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upj-bZ-yph">
                                 <rect key="frame" x="138" y="440" width="44" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <inset key="imageEdgeInsets" minX="13" minY="8.5" maxX="13" maxY="8"/>
                                 <state key="normal" image="ic-blk-tabbar-houndify-mic"/>
                                 <connections>
@@ -32,8 +34,30 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Upj-bZ-yph" secondAttribute="trailing" constant="118" id="KrF-uu-F3l"/>
+                            <constraint firstItem="5g0-yr-rmG" firstAttribute="top" secondItem="Upj-bZ-yph" secondAttribute="bottom" constant="20" id="VEV-xc-lXA"/>
+                            <constraint firstItem="Ryt-el-ydy" firstAttribute="top" secondItem="AxG-Em-Agv" secondAttribute="bottom" constant="53" id="cBi-lW-nQJ"/>
+                            <constraint firstItem="Upj-bZ-yph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="118" id="e5u-De-OrH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ryt-el-ydy" secondAttribute="trailing" constant="-4" id="f9y-LL-DSH"/>
+                            <constraint firstItem="Upj-bZ-yph" firstAttribute="centerX" secondItem="Ryt-el-ydy" secondAttribute="centerX" id="gOq-Jq-57o"/>
+                            <constraint firstItem="Ryt-el-ydy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kSu-du-nme"/>
+                            <constraint firstItem="Ryt-el-ydy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="v46-ff-Nit"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Houndify Remote" id="G6S-uN-gjI"/>
+                    <navigationItem key="navigationItem" title="Houndify Remote" id="G6S-uN-gjI">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="nP4-27-NRz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pnr-xZ-qPu">
+                                <rect key="frame" x="16" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1O-4b-3lp"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="responseTextView" destination="Ryt-el-ydy" id="vyr-sS-oGh"/>
@@ -42,6 +66,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15" y="1358"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="ZbH-H7-Hl6">
+            <objects>
+                <viewController id="Qy6-Mo-Qmc" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x5a-GG-ETx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KvD-fD-ux5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IS4-X0-N1c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKN-Rv-93Y">
+                                <rect key="frame" x="20" y="247" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gA0-fn-OlU">
+                                <rect key="frame" x="20" y="293" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Houndify Remote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-Jo-DXo">
+                                <rect key="frame" x="22" y="89" width="276" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-jl-M6v">
+                                <rect key="frame" x="20" y="375" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="Qy6-Mo-Qmc" eventType="touchUpInside" id="el3-UT-rTy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gA0-fn-OlU" secondAttribute="trailing" id="0vT-dD-CIA"/>
+                            <constraint firstItem="aaw-Jo-DXo" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="3UQ-24-bg4"/>
+                            <constraint firstItem="3Ge-jl-M6v" firstAttribute="top" secondItem="gA0-fn-OlU" secondAttribute="bottom" constant="52" id="76F-c6-7uZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MKN-Rv-93Y" secondAttribute="trailing" id="BdB-2K-Oss"/>
+                            <constraint firstItem="MKN-Rv-93Y" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="FzH-wL-sQW"/>
+                            <constraint firstItem="3Ge-jl-M6v" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="HUO-MC-NcK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3Ge-jl-M6v" secondAttribute="leading" id="Hcu-dq-FGU"/>
+                            <constraint firstItem="MKN-Rv-93Y" firstAttribute="top" secondItem="aaw-Jo-DXo" secondAttribute="bottom" constant="115" id="Nan-dz-gf4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gA0-fn-OlU" secondAttribute="leading" id="RU7-xd-C87"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aaw-Jo-DXo" secondAttribute="trailing" constant="2" id="XWx-Vv-zDi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MKN-Rv-93Y" secondAttribute="leading" id="axR-lp-una"/>
+                            <constraint firstItem="gA0-fn-OlU" firstAttribute="centerX" secondItem="IS4-X0-N1c" secondAttribute="centerX" id="bwA-kl-McV"/>
+                            <constraint firstItem="aaw-Jo-DXo" firstAttribute="leading" secondItem="IS4-X0-N1c" secondAttribute="leadingMargin" constant="2" id="fTY-1y-ZqK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Ge-jl-M6v" secondAttribute="trailing" id="kXA-uW-z5t"/>
+                            <constraint firstItem="aaw-Jo-DXo" firstAttribute="top" secondItem="x5a-GG-ETx" secondAttribute="bottom" constant="69" id="pLO-Om-zEQ"/>
+                            <constraint firstItem="gA0-fn-OlU" firstAttribute="top" secondItem="MKN-Rv-93Y" secondAttribute="bottom" constant="16" id="uNy-1c-8rH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextFieldInput" destination="MKN-Rv-93Y" id="Yzb-s8-jwc"/>
+                        <outlet property="passwordTextFieldInput" destination="gA0-fn-OlU" id="mRs-2S-2ld"/>
+                        <segue destination="mwa-dD-Ta2" kind="modal" identifier="LoginSegue" id="FYo-eg-lIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AB-Oa-tdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-960" y="1358"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zMl-gR-A5L">

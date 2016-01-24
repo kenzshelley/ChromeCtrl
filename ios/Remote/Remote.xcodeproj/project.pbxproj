@@ -28,6 +28,7 @@
 		4BD0ACA11C53825700D61125 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA01C53825700D61125 /* LaunchScreen.xib */; };
 		4BD0ACA31C53826A00D61125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA21C53826A00D61125 /* Main.storyboard */; };
 		4BD0ACA61C5390B300D61125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0AC861C53818600D61125 /* ViewController.m */; };
+		4BD0ACA91C542AB600D61125 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD0ACA81C542AB600D61125 /* LoginViewController.m */; };
 		F690A71E12751F3BEFE985FD /* libPods-Remote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		4BD0AC9D1C53821800D61125 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BD0ACA01C53825700D61125 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BD0ACA21C53826A00D61125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BD0ACA71C542A9E00D61125 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4BD0ACA81C542AB600D61125 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -215,6 +218,8 @@
 				4BD0AC841C53818600D61125 /* NavigationController.m */,
 				4BD0AC851C53818600D61125 /* ViewController.h */,
 				4BD0AC861C53818600D61125 /* ViewController.m */,
+				4BD0ACA71C542A9E00D61125 /* LoginViewController.h */,
+				4BD0ACA81C542AB600D61125 /* LoginViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				4BD0AC8D1C53818600D61125 /* NavigationController.m in Sources */,
 				4BD0AC8C1C53818600D61125 /* main.m in Sources */,
 				4BD0AC871C53818600D61125 /* AppDelegate.m in Sources */,
+				4BD0ACA91C542AB600D61125 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
