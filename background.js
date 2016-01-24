@@ -11,7 +11,7 @@ chrome.extension.onConnect.addListener(function(port) {
     console.log("message recieved "+ msg);
     let uid = msg;
     if (ref.getAuth()) uid = ref.getAuth().uid;
-    console.log("test");
+
     const tasksRef = ref.child("users").child(uid).child("tasks");
     tasksRef.on("value", function(snapshot) {
       let data = snapshot.val();
@@ -25,7 +25,6 @@ chrome.extension.onConnect.addListener(function(port) {
         let task = getTaskName(text);
         if (task.name == null) {
           console.log("null task!");
-          console.log(text);
           tasksRef.child(id).remove();
           return;
         }

@@ -53,6 +53,7 @@ function volume(params) {
 }
 
 function scroll(params) {
+  console.log("scrolling!");
   if (!params) return;
   if (!params.direction) return;
   const dir = params.direction;
