@@ -51,7 +51,7 @@
 
 /* Begin PBXFileReference section */
 		1F353D0FC5BAB27A1AC9F130 /* Pods-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.release.xcconfig"; sourceTree = "<group>"; };
-		4BD0AC2A1C53448C00D61125 /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BD0AC2A1C53448C00D61125 /* Chrome Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chrome Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD0AC431C53448C00D61125 /* RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD0AC471C53448C00D61125 /* RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTests.m; sourceTree = "<group>"; };
 		4BD0AC491C53448C00D61125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 		4BD0AC2B1C53448C00D61125 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BD0AC2A1C53448C00D61125 /* Remote.app */,
+				4BD0AC2A1C53448C00D61125 /* Chrome Control.app */,
 				4BD0AC431C53448C00D61125 /* RemoteTests.xctest */,
 				4BD0AC4E1C53448C00D61125 /* RemoteUITests.xctest */,
 			);
@@ -270,7 +270,7 @@
 			);
 			name = Remote;
 			productName = Remote;
-			productReference = 4BD0AC2A1C53448C00D61125 /* Remote.app */;
+			productReference = 4BD0AC2A1C53448C00D61125 /* Chrome Control.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4BD0AC421C53448C00D61125 /* RemoteTests */ = {
@@ -574,7 +574,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Chrome Control";
 			};
 			name = Debug;
 		};
@@ -592,7 +592,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamn.Remote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Chrome Control";
 			};
 			name = Release;
 		};
