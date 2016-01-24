@@ -15,6 +15,13 @@ const tasks = {
     ],
     "scope": "content"
   },
+  "test": {
+    "function": "test",
+    "keywords": [
+      "test" 
+    ],
+    "scope": "content"
+  },
   "nextTab": {
     "function": "nextTab",
     "keywords": [
@@ -111,9 +118,9 @@ const tasks = {
     "function": "search",
     "keywords": [
       "search",
-      "find",
+      "find"
     ],
-    "scope": "content",
+    "scope": "browser",
     "sendText": "true"
   },
   "bookmark": {
