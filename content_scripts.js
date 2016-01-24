@@ -70,7 +70,15 @@ function scroll(params) {
 }
 
 function fastForward() {
- document.getElementsByTagName("video")[0].playbackRate = 5.0;
+ document.getElementsByTagName("video")[0].playbackRate = 3.0;
+}
+
+function rewind() {
+ document.getElementsByTagName("video")[0].currentTime -= 60.0;
+}
+
+function restart() {
+  document.getElementsByTagName("video")[0].currentTime = 0.0;
 }
 
 function reload() {
@@ -81,6 +89,13 @@ function back() {
   history.back();
 }
 
+function forward() {
+  history.forward();
+}
+
+/* 
+  Expects a 
+*/
 function click(params) {
   console.log("click!");
   let text = params.text;
