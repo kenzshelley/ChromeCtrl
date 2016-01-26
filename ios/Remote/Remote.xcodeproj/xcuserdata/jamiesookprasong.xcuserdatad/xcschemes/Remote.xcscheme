@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4BD0AC291C53448C00D61125"
-               BuildableName = "Remote.app"
+               BuildableName = "Chrome Control.app"
                BlueprintName = "Remote"
                ReferencedContainer = "container:Remote.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD0AC291C53448C00D61125"
-            BuildableName = "Remote.app"
+            BuildableName = "Chrome Control.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD0AC291C53448C00D61125"
-            BuildableName = "Remote.app"
+            BuildableName = "Chrome Control.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
          </BuildableReference>
@@ -103,7 +103,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4BD0AC291C53448C00D61125"
-            BuildableName = "Remote.app"
+            BuildableName = "Chrome Control.app"
             BlueprintName = "Remote"
             ReferencedContainer = "container:Remote.xcodeproj">
          </BuildableReference>

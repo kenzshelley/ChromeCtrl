@@ -83,6 +83,7 @@
 		4BD0ACA21C53826A00D61125 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BD0ACA71C542A9E00D61125 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4BD0ACA81C542AB600D61125 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4BFC5E081C58164B005B5CCF /* Secrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Secrets.h; sourceTree = "<group>"; };
 		52F8C81A7901BCB851755040 /* Pods-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote/Pods-Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		7B41EB6480C86ADB94B5EAAE /* libPods-Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +194,7 @@
 				4BD0AC7E1C53818600D61125 /* AppImages.xcassets */,
 				4BD0AC801C53818600D61125 /* Images.xcassets */,
 				4BD0ACA01C53825700D61125 /* LaunchScreen.xib */,
+				4BFC5E081C58164B005B5CCF /* Secrets.h */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
