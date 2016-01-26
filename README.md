@@ -4,7 +4,7 @@ Addison Shelley
 Mackenzie Shelley
 Jamie Sookprasong
 
-iOS Instructions:
+#### iOS Instructions:
 * You will need to [create your own Houndify account](http://houndify.com/)
 * Register a new client and activate the Speech-to-Text domain.
 * In Xcode create a new header file called 'Secrets.h' with the following two lines:  
