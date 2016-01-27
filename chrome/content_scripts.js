@@ -175,7 +175,7 @@ function test() {
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  console.log("Received message!";
+  console.log("Received message!");
 
   let fn = window[request.function_name];
   console.log(request.function_name);

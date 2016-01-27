@@ -8,12 +8,10 @@ ref.unauth();
 chrome.extension.onConnect.addListener(function(port) {
   console.log("Connected .....");
   port.onMessage.addListener(function(msg) {
-    console.log("DAFUQ");
     console.log("message recieved "+ msg);
     let uid = msg;
     if (ref.getAuth()) uid = ref.getAuth().uid;
 
-    console.log("DAFUQ2");
     const tasksRef = ref.child("users").child(uid).child("tasks");
     tasksRef.on("value", function(snapshot) {
       let data = snapshot.val();
@@ -148,6 +146,14 @@ function createBookmark() {
         console.log("adding bookmark!");
       });
     });
+}
+
+function fullScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "fullscreen"}); })
+}
+
+function standardScreen() {
+  chrome.windows.getCurrent({}, function(window) { chrome.windows.update(window.id, {state: "maximize"}); })
 }
 
 
