@@ -1,0 +1,39 @@
+ANDROID HOUNDIFY SDK SAMPLE PROJECT
+
+VERSION: 0.2.16
+
+PREREQUISITES
+ -JDK 7+
+ -Android SDK
+
+SAMPLE SETUP ---------------------------
+
+1. ***** You need to set your Houndify account's login and password so that the sample build can pull down the Houndify client SDK jars down from the SoundHound Maven repository.
+   These can either be set in the houndify.properties file (be careful not to check this in to source control if you don't want to share this info), or you create and set the following
+   environment variables HOUNDIFY_USERNAME and HOUNDIFY_PASSWORD.
+
+2. Next, you need to set your Houndify CLIENT_ID and CLIENT_KEY values in the Constants.java file inside the src directory.
+
+BUILDING -------------------------------
+After Sample setup has been completed (see above), from the command-line inside the Houndify sample project directory run:
+
+    ./gradlew assembleDebug
+
+or you can open the project up in Android Studio and run it from there.
+
+WHAT THE SAMPLE DOES ------------------
+
+Showcases the integrating the Houndify UI components into an application.
+JSON returned from the server from a voice query including partial transcripts and conversation state handling.
+
+WHAT THE SAMPLE DOESN'T DO ------------
+
+You will need to specify a valid client id and client key for testing or else the server will reject all your queries.
+
+
+
+
+
+CHANGE LOG
+
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="250"
+    android:fromAlpha="1"
+    android:toAlpha="0" />
+<!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/anim/houndify_search_status_text_exit.xml -->

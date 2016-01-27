@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:textColor="@color/houndify_white"
+    android:textSize="@dimen/houndify_text_size_normal"
+    android:paddingBottom="100dp"
+    android:fontFamily="sans-serif-light"/>
+
+    <!-- this bottom padding is an arbitrarily large amount needed to enable scrolling behavior in some
+         cases for the ScrollingTranscriptionView --><!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/layout/houndify_view_scrolling_transcription_text.xml -->

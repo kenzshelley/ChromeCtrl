@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="225">
+
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1" />
+
+    <translate
+        android:fromYDelta="100%"
+        android:toYDelta="0%"/>
+
+</set>
+<!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/anim/houndify_search_text_enter.xml -->

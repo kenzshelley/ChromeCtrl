@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/houndify_btn_search_listening_pressed"
+          android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/houndify_btn_search_listening"/>
+
+</selector><!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/drawable/houndify_btn_search_listening_state.xml -->

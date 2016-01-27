@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="houndify_search_circle_end">#80FFFFFF</color>
+    <color name="houndify_search_circle_start">#B3FFFFFF</color>
+    <color name="houndify_search_mask">#2196F3</color>
+    <color name="houndify_search_wave_stroke">#8869CBEC</color>
+    <color name="houndify_white">#FFFFFF</color>
+    <declare-styleable name="houndify_SearchPanelView"><attr format="boolean" name="hsdk_SearchPanelViewTextSearchButton"/><attr format="reference" name="hsdk_SearchPanelView_normalDrawable"/><attr format="reference" name="hsdk_SearchPanelView_recognizingDrawable"/><attr format="reference" name="hsdk_SearchPanelView_listeningDrawable"/><attr format="reference" name="hsdk_SearchPanelView_ttsActiveDrawable"/><attr format="reference" name="hsdk_SearchPanelView_searchLoaderDrawable"/></declare-styleable>
+    <declare-styleable name="houndify_SearchPulse"><attr format="dimension" name="hsdk_SearchPulse_minPulseLength"/><attr format="dimension" name="hsdk_SearchPulse_maxPulseLength"/><attr format="color" name="hsdk_SearchPulse_circleStartColor"/><attr format="color" name="hsdk_SearchPulse_circleEndColor"/><attr format="color" name="hsdk_SearchPulse_waveStrokeColor"/><attr format="dimension" name="hsdk_SearchPulse_waveStrokeWidth"/></declare-styleable>
+    <!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="houndify_search_button_size">115dp</dimen>
+    <dimen name="houndify_search_panel_height">171dp</dimen>
+    <dimen name="houndify_search_panel_text_left_margin">24dp</dimen>
+    <dimen name="houndify_search_panel_text_right_margin">32dp</dimen>
+    <dimen name="houndify_search_pulse_max_length_circle">188dp</dimen>
+    <dimen name="houndify_search_pulse_min_length_circle">68dp</dimen>
+    <dimen name="houndify_search_status_text_translate">32dp</dimen>
+    <dimen name="houndify_text_size_normal">14sp</dimen>
+    <dimen name="houndify_text_size_xlarge">22sp</dimen>
+    <!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="houndify_search_recognizing">Searching…</string>
+    <string name="houndify_search_speak_now">Speak now</string>
+    <!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="houndify_Houndify" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

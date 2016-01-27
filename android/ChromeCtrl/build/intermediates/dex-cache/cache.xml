@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/hound.android/hound-sdk/0.2.15/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7b10f2bd9c5cf76dd93b7af0dc07551621f29d71">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-c64921bcd98c9c774161d511f374a6a35bca970a.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-4eeef761c2b8de32e9bfab71160812926cc56f64.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.3.1/be29b24233711c419ce935aa0a1b12ebc49d1c9a/firebase-client-android-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/firebase-client-android-2.3.1-ad401be01d3fd5f34aaf3fbc7e00ec72f075594a.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/firebase-client-jvm-2.3.1-87860df4e9586fd22cc8b8758ef6ba2c09d5c0a3.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/soundhound.android/vad/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5c04c0a9a236a8e0ce12bf684fd62ba601174603">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-2f075f4781b7aae4364f0e8cc633dd66d6bac92c.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/soundhound.android/speex/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6de73f4fe9cb23e03d2baed8b5586ea4e1fa45eb">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-3a8bd2b72e749815a55705d4fe8953ab00f86f49.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.koushikdutta.async/androidasync/2.1.2/38ff23022839229e8923a7b2d4ec6650aa338513/androidasync-2.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="38ff23022839229e8923a7b2d4ec6650aa338513">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/androidasync-2.1.2-8b2715f1c9e8fc62c727e1f899e4233037082c34.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-188e60bc02947cd2565d70debbcd768f38168bc5.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/tubesock-0.0.11-0848f9106d272716792319dc4da2f3ccb40df2c5.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.0/473e063d6396a1ff6e4b9c7943e604291ce18b07/jackson-databind-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="473e063d6396a1ff6e4b9c7943e604291ce18b07">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/jackson-databind-2.4.0-5faf59006aec09a1e2161606a2ed8b89361b628e.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/hound.android/phrasespotter/1.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="33738b1cf00a75c1f505003712064d3ddfcd158e">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-99991a85f170582845035ad65fdd9aa24e2b0e28.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-0aff6d6891803ddb6d157d690427d55886e6af9a.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-1ee52b12bc0a4fd722f4dc1067e1bf7d36ce7807.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient-android/4.3.5.1/eecbb0b998e77629862a13d957d552b3be58fc4e/httpclient-android-4.3.5.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eecbb0b998e77629862a13d957d552b3be58fc4e">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/httpclient-android-4.3.5.1-8608c8f981df752254814f2cc2cd881bb10b284e.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/hound.android/java-utils/1.0.0/3d712040e34d671352b908c204f7a256ac25e466/java-utils-1.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3d712040e34d671352b908c204f7a256ac25e466">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/java-utils-1.0.0-0a1b446718bc3becad6d32c7ce53f9780a3d539d.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/classes-35e40799f34fc2bb21659c6d9ac0ec5be78ec695.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.4.0/40340c0748190fe897baf7bffbc1b282734294e5/okhttp-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/okhttp-2.4.0-8d6b3283dca949d90ef83b4708aab2130da94914.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.0/1e33fd4cca6c4a9bf3d2f638cabb504a5b5c989d/jackson-core-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1e33fd4cca6c4a9bf3d2f638cabb504a5b5c989d">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/jackson-core-2.4.0-9087bd27e277ba2ff758b7c4750cbf5b37cbc5be.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-b18e918ad21b979ac51499923759b80ae8df2298.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/jackson-annotations-2.4.0-a80046684cd241aba1edf31290285dc00793a597.jar" />
+    </item>
+    <item
+        jar="/Users/mackenzie/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.4.0/5b72bf48563ea8410e650de14aa33ff69a3e8c35/okio-1.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="/Users/mackenzie/programming/remote/android/ChromeCtrl/build/intermediates/pre-dexed/debug/okio-1.4.0-8be5bec5871e5f18219ff694c16486bc0cf15663.jar" />
+    </item>
+
+</items>

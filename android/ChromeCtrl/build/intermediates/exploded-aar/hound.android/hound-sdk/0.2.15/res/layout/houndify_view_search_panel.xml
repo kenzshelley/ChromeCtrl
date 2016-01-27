@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hound.android.fd.view.SearchPulseView
+        android:id="@+id/pulse_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:hsdk_SearchPulse_waveStrokeWidth="1dp"
+        app:hsdk_SearchPulse_circleStartColor="@color/houndify_search_circle_start"
+        app:hsdk_SearchPulse_circleEndColor="@color/houndify_search_circle_end"
+        app:hsdk_SearchPulse_maxPulseLength="@dimen/houndify_search_pulse_max_length_circle"
+        app:hsdk_SearchPulse_minPulseLength="@dimen/houndify_search_pulse_min_length_circle"
+        app:hsdk_SearchPulse_waveStrokeColor="@color/houndify_search_wave_stroke"
+        />
+
+    <com.hound.android.fd.view.SearchButtonView
+        android:id="@+id/search_button"
+        android:layout_width="@dimen/houndify_search_button_size"
+        android:layout_height="@dimen/houndify_search_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"/>
+
+</RelativeLayout>
+<!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/layout/houndify_view_search_panel.xml -->

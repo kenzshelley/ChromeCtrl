@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_search_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/houndify_search_speak_now"
+    android:textColor="@color/houndify_white"
+    android:textSize="@dimen/houndify_text_size_xlarge"
+    android:fontFamily="sans-serif-light"/>
+<!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/layout/houndify_view_search_status_text.xml -->

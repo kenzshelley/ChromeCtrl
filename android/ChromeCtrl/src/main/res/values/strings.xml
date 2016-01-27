@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChromeCtrl</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="new_account">New Account</string>
+    <string name="signup">Sign Up</string>
+    <string name="is_member">Already a member?</string>
+    <string name="no_email">Email is required!</string>
+    <string name="no_pw">Password is required!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_account_button">Create Account</string>
+</resources>

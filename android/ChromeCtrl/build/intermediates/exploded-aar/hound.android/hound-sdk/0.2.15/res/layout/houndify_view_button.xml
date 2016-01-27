@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="48dp"
+    android:minWidth="48dp"
+    android:src="@drawable/houndify_btn_search_mic">
+    <!-- Former animated button
+    android:src="@drawable/houndify_button" -->
+
+</ImageView><!-- From: file:/melodis/jenkins/workspace/hound-sdk-android-trunk-push/houndify_sdk_libraries/hound_sdk/src/main/res/layout/houndify_view_button.xml -->
