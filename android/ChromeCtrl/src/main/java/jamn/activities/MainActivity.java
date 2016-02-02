@@ -5,7 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.firebase.client.Firebase;
@@ -24,7 +27,7 @@ import jamn.Constants;
 import jamn.R;
 import jamn.StatefulRequestInfoFactory;
 
-public class MainActivity extends Activity  {
+public class MainActivity extends AppCompatActivity {
     private TextView textView;
     private PhraseSpotterReader phraseSpotterReader;
     private Handler mainThreadHandler = new Handler(Looper.getMainLooper());
@@ -38,9 +41,31 @@ public class MainActivity extends Activity  {
         // The activity_main layout contains the com.hound.android.fd.HoundifyButton which is displayed
         // as the black microphone. When press it will load the HoundifyVoiceSearchActivity.
         setContentView( R.layout.activity_main );
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("ChromeCtrl");
+        toolbar.inflateMenu(R.menu.toolbar);
+        final Activity hack = this;
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.logout:
+                        Log.d("MainActivity", "Clicked logout!");
+                        mRootRef.unauth();
+
+                        // Start main activity
+                        Intent i = new Intent(hack, LoginActivity.class);
+                        startActivity(i);
+                        finish();
+                        return true;
+                }
+                return false;
+            }
+
+        });
 
         mRootRef = new Firebase("https://remote-hound.firebaseio.com/");
-        mUid = "efec5b71-0bb2-4463-aabc-4f22a9319804";
+        mUid = mRootRef.getAuth().getUid();
 
         // Text view for displaying written result
         textView = (TextView)findViewById(R.id.textView);
@@ -145,48 +170,6 @@ public class MainActivity extends Activity  {
         }
     }
 
-    /**
-     * Called from onActivityResult() above
-     *
-     * @param response
-     */
-    //private void onResponse(final HoundResponse response) {
-    //    if (response.getResults().size() > 0) {
-    //        // Required for conversational support
-    //        StatefulRequestInfoFactory.get(this).setConversationState(response.getResults().get(0).getConversationState());
-
-    //        textView.setText("Received response\n\n" + response.getResults().get(0).getWrittenResponse());
-
-    //        /**
-    //         * "Client Match" demo code.
-    //         *
-    //         * Houndify client apps can specify their own custom phrases which they want matched using
-    //         * the "Client Match" feature. This section of code demonstrates how to handle
-    //         * a "Client Match phrase".  To enable this demo first open the
-    //         * StatefulRequestInfoFactory.java file in this project and and uncomment the
-    //         * "Client Match" demo code there.
-    //         *
-    //         * Example for parsing "Client Match"
-    //         */
-    //        if ( response.getResults().size() > 0 ) {
-    //            CommandResult commandResult = response.getResults().get( 0 );
-    //            if ( commandResult.getCommandKind().equals("ClientMatchCommand")) {
-    //                JsonNode matchedItemNode = commandResult.getJsonNode().findValue("MatchedItem");
-    //                String intentValue = matchedItemNode.findValue( "Intent").textValue();
-
-    //                if ( intentValue.equals("TURN_LIGHT_ON") ) {
-//  //                      textToSpeechMgr.speak("Client match TURN LIGHT ON successful");
-    //                }
-    //                else if ( intentValue.equals("TURN_LIGHT_OFF") ) {
- // //                      textToSpeechMgr.speak("Client match TURN LIGHT OFF successful");
-    //                }
-    //            }
-    //        }
-    //    }
-    //    else {
-    //        textView.setText("Received empty response!");
-    //    }
-    //}
 
     /**
      * Called from onActivityResult() above
