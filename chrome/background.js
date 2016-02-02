@@ -9,51 +9,66 @@ chrome.extension.onConnect.addListener(function(port) {
   console.log("Connected .....");
   port.onMessage.addListener(function(msg) {
     console.log("message recieved "+ msg);
-    let uid = msg;
-    if (ref.getAuth()) uid = ref.getAuth().uid;
 
-    const tasksRef = ref.child("users").child(uid).child("tasks");
-    tasksRef.on("value", function(snapshot) {
-      let data = snapshot.val();
-      for(var id in data) {
-        console.log(data);
-        let taskItem = data[id];
-        let text = taskItem.text; 
-        text = text.toLowerCase();
+    let email = msg.email;
+    let pw = msg.pw;
 
-        // Get array of words
-        text = text.split(" ");
-        let task = getTaskName(text);
-        if (task.name == null) {
-          console.log("null task!");
-          tasksRef.child(id).remove();
-          return;
-        }
-
-        console.log("grabbed a task!");
-        console.log(task);
-
-        if (task.data.scope === "content") {
-          chrome.tabs.getSelected(function(tab) {
-            console.log("Got a tab!");
-            console.log(tab);
-            chrome.tabs.sendMessage(tab.id,
-                                    {function_name: task.name, params: task.params},
-                                    function(response) {
-                                      console.log(response);
-                                    });
-          });
-        } else if (task.data.scope === "browser") {
-          let fn = window[task.name];
-          fn(task.params);
-        }
-
-        // Delete the task
-        tasksRef.child(id).remove();
+    ref.authWithPassword({
+      email    : email,
+      password : pw
+    }, function(error, authData) {
+      if (error) {
+        console.log("Login Failed!", error);
+      } else {
+        console.log("Authenticated successfully with payload:", authData);
+        let uid = ref.getAuth().uid;
+        setListener(ref, uid);
       }
     });
   });
 });
+
+function setListener(ref, uid) {
+  const tasksRef = ref.child("users").child(uid).child("tasks");
+  tasksRef.on("value", function(snapshot) {
+    let data = snapshot.val();
+    for(var id in data) {
+      let taskItem = data[id];
+      let text = taskItem.text; 
+      text = text.toLowerCase();
+
+      // Get array of words
+      text = text.split(" ");
+      let task = getTaskName(text);
+      if (task.name == null) {
+        console.log("null task!");
+        tasksRef.child(id).remove();
+        return;
+      }
+
+      console.log("grabbed a task!");
+      console.log(task);
+
+      if (task.data.scope === "content") {
+        chrome.tabs.getSelected(function(tab) {
+          console.log("Got a tab!");
+          console.log(tab);
+          chrome.tabs.sendMessage(tab.id,
+                                  {function_name: task.name, params: task.params},
+                                  function(response) {
+                                    console.log(response);
+                                  });
+        });
+      } else if (task.data.scope === "browser") {
+        let fn = window[task.name];
+        fn(task.params);
+      }
+
+      // Delete the task
+      tasksRef.child(id).remove();
+    }
+  });
+}
 
 function nextTab() {
   // first, get currently active tab
