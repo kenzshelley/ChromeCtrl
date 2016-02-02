@@ -9,20 +9,9 @@ $(document).ready(function() {
   document.getElementById("login").addEventListener("click", function() {
     let email = document.getElementById("email").value;
     let pw = document.getElementById("pw").value;
-    ref.authWithPassword({
-      email    : email,
-      password : pw
-    }, function(error, authData) {
-      if (error) {
-        console.log("Login Failed!", error);
-      } else {
-        console.log("Authenticated successfully with payload:", authData);
-        console.log(ref.getAuth());
-        var port = chrome.extension.connect({name: "Sample Communication"});
-        port.postMessage(authData.uid);
-        window.location.href = "logout.html";
-      }
-    });
+    var port = chrome.extension.connect({name: "Sample Communication"});
+    port.postMessage({"email": email, "pw": pw});
+    window.location.href = "logout.html";
   });
 
   document.getElementById("create-acct").addEventListener("click", function() {
