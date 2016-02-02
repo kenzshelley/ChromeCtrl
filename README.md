@@ -4,6 +4,22 @@ Addison Shelley
 Mackenzie Shelley
 Jamie Sookprasong
 
+### Entertainment:
+* Play/pause video
+* Fastforward
+* Adjust volume
+* Switch to full screen
+
+### Navigation:
+* Scroll up and down on a page
+* Move between tabs
+* Close a tab
+* Create a new tab
+* Select links & buttons
+* Search for a phrase
+* Go directly to common sites (e.g. Facebook)
+
+
 #### iOS Instructions:
 * You will need to [create your own Houndify account](http://houndify.com/)
 * Register a new client and activate the Speech-to-Text domain.
