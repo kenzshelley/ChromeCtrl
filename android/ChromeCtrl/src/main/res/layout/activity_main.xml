@@ -31,11 +31,16 @@
 
     </ScrollView>
 
-    <com.hound.android.fd.HoundifyButton
+    <!--com.hound.android.fd.HoundifyButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        />
+        /-->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:src="@android:drawable/ic_btn_speak_now"/>
 
 </LinearLayout>
