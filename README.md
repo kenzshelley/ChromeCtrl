@@ -1,5 +1,5 @@
 ### About
-ChromeCtrl is an application that allows you to control your Chrome browser by speaking into an app on your phone. 
+ChromeCtrl is an application that allows you to control your Chrome browser by speaking into an app on your phone. When connected to power, a hands-free accessibility mode is automatically available by saying "OK Hound" before your command. We've found this to be especially useful when your laptop is hooked up to the TV playing a video and you're halfway across the room on the couch or in bed.
 
 #### Entertainment
 * Play/pause video
