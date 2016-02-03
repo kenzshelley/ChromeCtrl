@@ -13,7 +13,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -57,6 +60,22 @@ public class MainActivity extends AppCompatActivity {
 
         mRootRef = new Firebase("https://remote-hound.firebaseio.com/");
         mUid = mRootRef.getAuth().getUid();
+
+        // Set listener for completed tasks
+        mRootRef.child("users").child(mUid).child("completed_tasks").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.getChildren().iterator().hasNext()) {
+                    Object ob = dataSnapshot.getChildren().iterator().next().getValue();
+                    Log.d("Main", ob.toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
 
         // Text view for displaying written result
         mTextView = (TextView)findViewById(R.id.textView);
