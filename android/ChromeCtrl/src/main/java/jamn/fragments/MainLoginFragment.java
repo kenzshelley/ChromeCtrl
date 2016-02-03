@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,10 +12,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.firebase.client.AuthData;
-import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
 
 import jamn.R;
 import jamn.activities.MainActivity;
@@ -41,7 +38,6 @@ public class MainLoginFragment extends Fragment {
             public void onClick(View buttonView) {
                 final String email = ((EditText)v.findViewById(R.id.username)).getText().toString();
                 final String pw =  ((EditText)v.findViewById(R.id.password)).getText().toString();
-                Log.d("MainLoginFrag", "Clicked login!");
 
                 // Attempt to authenticate the user
                 rootRef.authWithPassword(email, pw, new Firebase.AuthResultHandler() {
@@ -79,5 +75,4 @@ public class MainLoginFragment extends Fragment {
 
         return v;
     }
-
 }
