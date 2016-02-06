@@ -30,7 +30,7 @@ chrome.extension.onConnect.addListener(function(port) {
 
 function setListener(ref, uid) {
   const tasksRef = ref.child("users").child(uid).child("tasks");
-  const completedTasksRef = ref.child("users").child(uid).child("completed_tasks";)
+  const completedTasksRef = ref.child("users").child(uid).child("completed_tasks");
   tasksRef.on("value", function(snapshot) {
     let data = snapshot.val();
     for(var id in data) {
@@ -69,7 +69,7 @@ function setListener(ref, uid) {
       let completedTask = {
         name: task.name
       }
-      tasksRef.push().set(completedTask);
+      completedTasksRef.push().set(completedTask);
 
       // Delete the task
       tasksRef.child(id).remove();
