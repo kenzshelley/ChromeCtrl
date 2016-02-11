@@ -4,18 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
@@ -28,6 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 import jamn.R;
+import jamn.fragments.SpeechRecognitionFragment;
 import jamn.models.Task;
 
 public class MainActivity extends AppCompatActivity {
@@ -105,17 +104,13 @@ public class MainActivity extends AppCompatActivity {
         // Text view for displaying written result
         mTextView = (TextView)findViewById(R.id.textView);
 
-        ImageButton button = (ImageButton) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.main_layout);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-                i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
-                try {
-                    startActivityForResult(i, REQUEST_OK);
-                } catch (Exception e) {
-                    Toast.makeText(getParent(), "Error initializing speech to text engine.", Toast.LENGTH_LONG).show();
-                }
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                SpeechRecognitionFragment speechDialog = new SpeechRecognitionFragment();
+                speechDialog.show(fragmentManager, null);
             }
         });
     }

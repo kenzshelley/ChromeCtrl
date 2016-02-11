@@ -3,6 +3,7 @@ package jamn.fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
@@ -47,7 +48,6 @@ public class SpeechDialogFragment extends LinearLayout {
 
         @Override
         public void onEndOfSpeech() {
-            mSpeechCallback.handleMessage(null);
             Log.d("speech", "End of speech");
         }
 
@@ -66,6 +66,17 @@ public class SpeechDialogFragment extends LinearLayout {
         public void onResults(Bundle results) {
             List<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
             Log.d("results", matches.toString());
+
+            String result = "";
+            if (!matches.isEmpty()) {
+               result = matches.get(0);
+            }
+
+            Bundle messageBundle = new Bundle();
+            messageBundle.putSerializable("result", matches.get(0));
+            Message message = new Message();
+            message.setData(messageBundle);
+            mSpeechCallback.handleMessage(message);
         }
 
         @Override
