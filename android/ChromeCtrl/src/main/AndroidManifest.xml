@@ -27,5 +27,10 @@
             android:name=".activities.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name=".activities.SpeechActivity"
+            android:label="SpeechActivity"
+            android:theme="@style/TransparentTheme">
+        </activity>
     </application>
 </manifest>

@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Map;
 
 import jamn.R;
-import jamn.fragments.SpeechRecognitionFragment;
+import jamn.fragments.SpeechDialogFragment;
 import jamn.models.Task;
 
 public class MainActivity extends AppCompatActivity {
@@ -108,9 +108,13 @@ public class MainActivity extends AppCompatActivity {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                SpeechRecognitionFragment speechDialog = new SpeechRecognitionFragment();
-                speechDialog.show(fragmentManager, null);
+                Log.d("MainActivity", "about to start speech");
+                Intent i = new Intent(hack, SpeechActivity.class);
+                startActivityForResult(i, REQUEST_OK);
+                //FragmentManager fragmentManager = getSupportFragmentManager();
+                //SpeechDialogFragment speechDialog = new SpeechDialogFragment();
+                //speechDialog.show(fragmentManager, null);
+
             }
         });
     }
@@ -118,10 +122,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode==REQUEST_OK  && resultCode==RESULT_OK) {
-            ArrayList<String> thingsYouSaid = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
-            String result = thingsYouSaid.get(0);
+        Log.d("MainActivity", "in onActivityResult!");
+        if (requestCode==REQUEST_OK  && resultCode==RESULT_OK) {
+            //ArrayList<String> thingsYouSaid = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+
+            //String result = thingsYouSaid.get(0);
+            String result = data.getDataString();
             mTextView.setText("\"" + result + "\"");
             mTextView.setTextColor(getResources().getColor(R.color.colorPrimary));
 
