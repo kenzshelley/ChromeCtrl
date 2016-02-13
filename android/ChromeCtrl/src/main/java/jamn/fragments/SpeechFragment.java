@@ -10,6 +10,9 @@ import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import java.util.List;
@@ -34,7 +37,11 @@ public class SpeechFragment extends LinearLayout {
 
         mSpeechRecognizer.startListening(mSpeechRecognizerIntent);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View v = inflater.inflate(R.layout.fragment_speech_dialog, null);
+        View v = inflater.inflate(R.layout.fragment_speech, null);
+
+        ImageView gradientCircle = (ImageView) v.findViewById(R.id.gradient_ring);
+        Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.clockwise);
+        gradientCircle.startAnimation(animation);
 
         addView(v);
     }

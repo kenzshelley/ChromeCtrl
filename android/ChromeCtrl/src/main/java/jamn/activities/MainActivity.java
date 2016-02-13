@@ -3,37 +3,26 @@ package jamn.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.speech.RecognizerIntent;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.ValueEventListener;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import jamn.R;
-import jamn.fragments.SpeechDialogFragment;
-import jamn.models.Task;
 
 public class MainActivity extends AppCompatActivity {
     private TextView mTextView;
     private Firebase mRootRef;
     private String mUid;
     private RelativeLayout mRelativeLayout;
+    private ImageView mWaitingIcon;
     protected static final int REQUEST_OK = 1;
 
     @Override
@@ -114,10 +103,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("MainActivity", "about to start speech");
                 Intent i = new Intent(hack, SpeechActivity.class);
                 startActivityForResult(i, REQUEST_OK);
-                //FragmentManager fragmentManager = getSupportFragmentManager();
-                //SpeechDialogFragment speechDialog = new SpeechDialogFragment();
-                //speechDialog.show(fragmentManager, null);
-
             }
         });
     }
@@ -132,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
 
             //String result = thingsYouSaid.get(0);
             String result = data.getDataString();
-            mTextView.setText("\"" + result + "\"");
-            mTextView.setTextColor(getResources().getColor(R.color.colorPrimary));
+            mTextView.setText(result);
+            mTextView.setTextColor(getResources().getColor(R.color.white));
 
             // Send text to firebase
             Map<String, String> textMap = new HashMap<>();
