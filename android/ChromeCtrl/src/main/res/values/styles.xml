@@ -17,5 +17,6 @@
 
     <style name="CustomDialog" parent="@android:style/Theme.Dialog">
         <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 </resources>

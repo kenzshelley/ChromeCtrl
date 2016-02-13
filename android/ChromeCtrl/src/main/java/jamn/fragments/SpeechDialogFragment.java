@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.DialogFragment;
+import android.view.Window;
 
 import jamn.R;
 
@@ -33,6 +34,7 @@ public class SpeechDialogFragment extends DialogFragment {
         super.onCreate(savedInstanceState);
 
         Dialog dialog = new Dialog(getActivity(), R.style.CustomDialog);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(new SpeechFragment(this.getContext(), new SpeechCallback()));
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
 

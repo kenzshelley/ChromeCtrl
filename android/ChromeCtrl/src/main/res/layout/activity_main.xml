@@ -1,40 +1,28 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/bg2"
     android:clickable="true"
+    android:layout_gravity="center"
     tools:context=".activities.MainActivity">
-    <android.support.v7.widget.Toolbar
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:id="@+id/toolbar"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:background="@color/colorPrimaryDark">
-
-    </android.support.v7.widget.Toolbar>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="top|center"
-            android:textColor="@color/colorAccent"
-            android:textStyle="italic"
-            android:textSize="32sp"
-            android:layout_marginTop="24dp"
-            tools:text='"Test"'
-            android:textIsSelectable="true"/>
-    </RelativeLayout>
-</LinearLayout>
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_marginTop="150dp"
+        tools:text='Tap Anywhere'
+        android:textIsSelectable="true"/>
+    <ImageView
+        android:id="@+id/waiting"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mic_waiting"/>
+</RelativeLayout>

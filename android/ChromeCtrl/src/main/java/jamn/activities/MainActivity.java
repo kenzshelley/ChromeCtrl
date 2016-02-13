@@ -43,69 +43,72 @@ public class MainActivity extends AppCompatActivity {
         setContentView( R.layout.activity_main );
 
         // Setup toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("ChromeCtrl");
-        toolbar.inflateMenu(R.menu.toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //toolbar.setTitle("ChromeCtrl");
+        //toolbar.inflateMenu(R.menu.toolbar);
+        //final Activity hack = this;
+        //toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        //    @Override
+        //    public boolean onMenuItemClick(MenuItem item) {
+        //        switch (item.getItemId()) {
+        //            case R.id.logout:
+        //                Log.d("MainActivity", "Clicked logout!");
+        //                mRootRef.unauth();
+
+        //                // Start main activity
+        //                Intent i = new Intent(hack, LoginActivity.class);
+        //                startActivity(i);
+        //                finish();
+        //                return true;
+        //        }
+        //        return false;
+        //    }
+        //});
         final Activity hack = this;
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.logout:
-                        Log.d("MainActivity", "Clicked logout!");
-                        mRootRef.unauth();
 
-                        // Start main activity
-                        Intent i = new Intent(hack, LoginActivity.class);
-                        startActivity(i);
-                        finish();
-                        return true;
-                }
-                return false;
-            }
-        });
-
-        mRelativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
+//        mRelativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
 
         mRootRef = new Firebase("https://remote-hound.firebaseio.com/");
         mUid = mRootRef.getAuth().getUid();
 
         // Set listener for completed tasks
-        mRootRef.child("users").child(mUid).child("completed_tasks").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                List<Task> tasks = new ArrayList<Task>();
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    tasks.add(snapshot.getValue(Task.class));
-                }
+        //mRootRef.child("users").child(mUid).child("completed_tasks").addValueEventListener(new ValueEventListener() {
+        //    @Override
+        //    public void onDataChange(DataSnapshot dataSnapshot) {
+        //        List<Task> tasks = new ArrayList<Task>();
+        //        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+        //            tasks.add(snapshot.getValue(Task.class));
+        //        }
 
-                List<Task> taskList = new ArrayList<Task>();
-                if (!tasks.isEmpty()) {
-                    // Get the most recent task
-                    Task task = tasks.get(tasks.size() - 1);
-                    LayoutInflater layoutInflater = LayoutInflater.from(hack);
-                    View view = layoutInflater.inflate(R.layout.task_item, mRelativeLayout, false);
+        //        List<Task> taskList = new ArrayList<Task>();
+        //        if (!tasks.isEmpty()) {
+        //            // Get the most recent task
+        //            Task task = tasks.get(tasks.size() - 1);
+        //            LayoutInflater layoutInflater = LayoutInflater.from(hack);
+        //            View view = layoutInflater.inflate(R.layout.task_item, mRelativeLayout, false);
 
-                    TextView textView = (TextView) view.findViewById(R.id.taskName);
-                    textView.setText(task.getName());
+        //            TextView textView = (TextView) view.findViewById(R.id.taskName);
+        //            textView.setText(task.getName());
 
-                    if (mRelativeLayout.findViewById(R.id.cardView) != null) {
-                        mRelativeLayout.removeView(mRelativeLayout.findViewById(R.id.cardView));
-                    }
-                    mRelativeLayout.addView(view);
-                }
-            }
+        //            if (mRelativeLayout.findViewById(R.id.cardView) != null) {
+        //                mRelativeLayout.removeView(mRelativeLayout.findViewById(R.id.cardView));
+        //            }
+        //            mRelativeLayout.addView(view);
+        //        }
+        //    }
 
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-            }
-        });
+        //    @Override
+        //    public void onCancelled(FirebaseError firebaseError) {
+        //    }
+        //});
 
         // Text view for displaying written result
         mTextView = (TextView)findViewById(R.id.textView);
+        mTextView.setText("Tap Anywhere");
+        mTextView.setTextColor(getResources().getColor(R.color.white));
 
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.main_layout);
-        linearLayout.setOnClickListener(new View.OnClickListener() {
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.main_layout);
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("MainActivity", "about to start speech");

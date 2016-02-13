@@ -9,5 +9,6 @@
     <color name="loginPageBlue">#27496D</color>
     <color name="loginButtonBlue">#157EFB</color>
     <color name="createButtonBlue">#1E5998</color>
+    <color name="colorMain">#4DD0E1</color>
     <color name="white">#FFFFFD</color>
 </resources>
