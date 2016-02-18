@@ -25,4 +25,14 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/mic_waiting"/>
+    <TextView
+        android:id="@+id/speechTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waiting"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        tools:text='shit you said'/>
 </RelativeLayout>
